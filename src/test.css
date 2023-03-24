@@ -1,0 +1,15 @@
+* {
+  transform: scaleY(1);
+  transform: translateY(-100px);
+  transition-timing-function: ease-out;
+  transition-duration: 300ms;
+  transform: translate(0, 0);
+  padding: 8px 16px;
+  opacity: 1;
+  overflow: visible;
+  align-self: stretch;
+  height: 100vh;
+  flex: 1 1 0% !important;
+  white-space: nowrap;
+  word-wrap: none;
+}
