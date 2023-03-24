@@ -16,7 +16,7 @@ import {
 } from 'react-icons/bi';
 import IconLinkBox from '@/global/iconLinkButton';
 import IconBlackLink from '@/global/iconBlankButton';
-import gotoID from '@/utils/HashLink';
+import gotoID from '@/utils/gotoHashLink';
 
 const gitLink = 'https://github.com/mineclover/react-playground/blob/main/';
 const vscodeURI = 'vscode://file/P:/Dev/react-playground/';

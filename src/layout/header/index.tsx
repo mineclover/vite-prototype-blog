@@ -8,24 +8,30 @@ import HeaderSubMenu from '@/layout/header/HeaderSubMenu';
 import { useAppSelector } from '@/app/hooks';
 import { order } from '@/features/postSlice';
 import LearnBar from '@/layout/learn';
+import BlogGithub from '@/components/badge/BlogGithub';
 
 import { MaxWidthStyle, Pretendard, Jamsil } from '../../global/styleUtils';
 
 const App = () => {
   return (
     <>
+      {/* 외부 가이드라인 박스 */}
       <HeaderRoot>
+        {/* 실질적 내부 컨텐츠 */}
         <HeaderMaxWidth>
           <Logo />
+
           <FirstDepthLink to="indexing">{'index'.toUpperCase()}</FirstDepthLink>
 
           <SideSignBox>
-            <FirstDepthLink to="/">
+            <BlogGithub />
+
+            {/* <FirstDepthLink to="/">
               <BiUserCircle />
               <Jamsil size="16px" weight={400}>
                 로그인
               </Jamsil>
-            </FirstDepthLink>
+            </FirstDepthLink> */}
           </SideSignBox>
         </HeaderMaxWidth>
         <HeaderSubMenu />

@@ -6,6 +6,8 @@
   transform: translate(0, 0);
   padding: 8px 16px;
   opacity: 1;
+  box-shadow: 0px 0px 2px #fff;
+  text-shadow: 0px 0px 2px #fff;
   overflow: visible;
   align-self: stretch;
   height: 100vh;
