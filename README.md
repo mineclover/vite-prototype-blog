@@ -1,6 +1,9 @@
 # 사용 전 체크
 
 .obsidian을 가져와서 쓰는 것을 권장함
+피그마 체크 할 것 : [피그마](https://www.figma.com/file/JTgfhaiAm9mWAqbmChCEYo/react-playground?node-id=0%3A1&t=oczIrWhWazX5AhPN-1)
+[프리뷰](https://zippy-lamington-f8a667.netlify.app/)
+
 
 # 폴더 네이밍
 
