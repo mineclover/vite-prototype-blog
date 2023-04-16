@@ -27,6 +27,7 @@ export default LabelLink;
 
 const LinkBook = styled.div`
   cursor: pointer;
+  white-space: nowrap;
   :hover {
     background-color: ${colors.Gray02};
   }

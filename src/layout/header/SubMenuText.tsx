@@ -39,10 +39,15 @@ interface plus {
 }
 
 const SubMenuText = styled(Jamsil)<plus>`
+  position: relative;
   display: flex;
   flex-direction: row;
   align-self: stretch;
   align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
   padding: 5px 10px;
   gap: 4px;
 
@@ -52,13 +57,15 @@ const SubMenuText = styled(Jamsil)<plus>`
     props.select ? `2px solid ${colors.Black}` : 'none'};
 
   svg {
+    position: absolute;
+    right: 0;
     opacity: 0;
-    margin-left: -16px;
+    margin-right: 16px;
     transition-duration: 500ms;
   }
   svg.state {
     opacity: 1;
-    margin-left: 0px;
+    margin-right: 0px;
   }
   :hover {
     padding: 5px 20px;
@@ -67,7 +74,7 @@ const SubMenuText = styled(Jamsil)<plus>`
   }
   :hover > svg {
     opacity: 1;
-    margin-left: 0px;
+    margin-right: 0px;
     color: ${colors.Signature} !important;
   }
 `;

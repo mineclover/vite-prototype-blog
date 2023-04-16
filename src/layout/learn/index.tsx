@@ -23,7 +23,8 @@ const App = () => {
     if (index === 0) {
       return (
         <LinkBook to="/" key={index}>
-          {location.origin}
+          home
+          {/* {location.origin} */}
         </LinkBook>
       );
     }
@@ -31,7 +32,7 @@ const App = () => {
 
     return (
       <LinkBook to={result} key={index}>
-        /{path}
+        /{decodeURI(path)}
       </LinkBook>
     );
   });

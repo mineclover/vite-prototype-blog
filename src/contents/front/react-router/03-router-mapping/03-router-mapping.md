@@ -125,7 +125,7 @@ const markdowns = Object.keys(markdown).map((component) => {
 ```
 
 그냥 간단하게 컴포넌트들은 처음 가져올 때부터 컴포넌트를 리포트한 다음에 라우팅을 해서 라우터의 Outlet을 잘 사용할 수 있게 작업하였음
-자세한 내용은 [vite-glob](../../../blog/dev-softer/posts/vite-glob.md)
+자세한 내용은 [vite-glob](../../../work/vite/vite-glob.md)
 
 ## 리액트로 객체 데이터 전달
 

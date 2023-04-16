@@ -50,6 +50,12 @@ export default function App() {
 }
 ```
 
+
+## form 감싸는 방법
+
+제어해야 할 input 이나 전송 상황을 트리거 해주는 submit 타입의 버튼을 감싸기만 하면 된다
+
+
 ## 사용된 개념
 
 setter, getter , Closure, destructuring , javascript 에서의 object

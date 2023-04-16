@@ -3,13 +3,13 @@ title:
 slug:
 tags:
 date: 2023-03-18
-modified: 2023-03-19
+modified: 2023-03-26
 ---
 
 ## 소개
 
 작업 전에 interceptors 에 넣는 것과
-시그널 주입으로 열린 request 를 닫는 기능을 정리해야겠다
+시그널 주입으로 열린 request 를 닫는 기능을 정리했다
 
 우선 이 작업은 팀프로젝트로 진행했던 홀리몰리 프론트 PDF 개발에 들어있다
 
@@ -42,8 +42,6 @@ signal: controllerRef.current.signal;
 
 [(번역) AbortController는 당신의 친구입니다](https://velog.io/@sehyunny/abort-controller-is-your-friend)
 
-이 글을 읽으실 때쯤 사용할 수 있거나 또는 그렇지 않은 몇 가지 헬퍼가 존재합니다. 앞서 직접 중단하는 것을 포함하여 `AbortController` 의 간단한 사용 예제에서 대부분 보여드렸습니다.
-
 - `AbortSignal.timeout(ms)`: 일정 시간 이후에 자동으로 중단되는 단일 `AbortSignal` 을 생성합니다. 필요하다면 쉽게 생성할 수 있습니다.
 
 ```js
@@ -54,7 +52,8 @@ function abortTimeout(ms) {
 }
 ```
 
-- `AbortSignal.any(signals)`: 전달된 시그널 중 어떤 하나라도 중단되면 중단되는 시그널을 생성합니다. 다시 한번 말씀드리면, 이를 여러분 스스로 구성할 수 있습니다. 하지만 주의하셔야 할 건 아무런 시그널도 전달하지 않으면 파생된 시그널은 *절대* 중단되지 않습니다.
+- `AbortSignal.any(signals)`: 전달된 시그널 중 어떤 하나라도 중단되면 중단되는 시그널을 생성합니다.
+- 다시 한번 말씀드리면, 이를 여러분 스스로 구성할 수 있습니다. 하지만 주의하셔야 할 건 아무런 시그널도 전달하지 않으면 파생된 시그널은 *절대* 중단되지 않습니다.
 
 ```js
 function abortAny(signals) {
@@ -94,6 +93,8 @@ function throwIfSignalAborted(signal) {
 
 정확히는 siganl 과 .abort() 가 있다
 시그널에서 aborted 라는 속성을 통해 정지 실행여부를 확인 가능하다
+
+### signal.aborted
 
 false 가 실행되지 않은 것이고 true 가 실행된 것...
 ![](file/01-axios-request-controll.png)

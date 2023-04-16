@@ -145,6 +145,7 @@ axios.post('/api/users/uploadimage', formData, config);
 string 이 아닌 것은 다 blob 으로 만들어야할 것 같음
 
 json 으로 처리되는 것들은 data 에 다른 값으로 넣어서 보낼 수 있지 않을가 싶다
+여기서 test는 formData에 들어가는 키 값이다 
 
 ```ts
 const formData = new FormData();
@@ -186,6 +187,7 @@ const onSubmit = async (data: any) => {
 ```
 
 `.catch` 부분이 굉장히 중요한데
+없으면 전송 실패를 감지하지 못하고 result 에 값이 들어가지 않는다
 
 ## 그 외
 
@@ -198,7 +200,7 @@ const onSubmit = async (data: any) => {
 
 ## 한글로 보내기
 
-파일을 서버에서 받아보는데.. 파일이 아스키코드인코딩되있어서 보기 안좋았다
+파일을 서버에서 받아보는데.. 파일이 아스키코드 인코딩되있어서 보기 안좋았다
 
 " 브라우저 자바스크립트에서 한글인 파일을 HTTP 을 서버에 전송할 때 utf 로 설정하는 방법 " 을 찾아봤다
 
@@ -231,7 +233,7 @@ const data = {
 response.status(200).json(data);
 ```
 
-json 은 end 를 포함해서 안써도 된다더라
+json 은 end 를 포함해서 안써도 된다
 통신을 이 끝났음을 전송하는 작업도 필요했는데
 노드 쪽에서 콘솔로그만 찍으니 결과 값이 돌아오지 않아 로딩이 안끝나는 문제를 발견하여 알게 되었음
 

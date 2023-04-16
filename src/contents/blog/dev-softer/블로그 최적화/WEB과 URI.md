@@ -3,7 +3,6 @@ date: 2023-03-13
 modified: 2023-03-14
 ---
 
-obsidian://open?vault=react-playground&file=src%2Fcontents%2Fblog%2Fdev-softer%2Fposts%2Fvite-glob
 같은 링크
 웹 페이지에서도 열린다
 그렇다면 vscode 에서도 해당하는 vscode 를 열어볼 수 있게 하면 재밌을것 같지 않은가

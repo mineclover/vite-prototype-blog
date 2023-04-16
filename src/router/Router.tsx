@@ -18,6 +18,8 @@ const modules: any = import.meta.glob('../contents/**/*.tsx', { eager: true });
 const markdown: any = import.meta.glob([
   '../contents/**/*.md',
   '!../contents/contents.md',
+  '!../contents/blog/**/*.md',
+  '!../contents/etc/**/*.md',
 ]);
 
 export interface MappingOrigin {
@@ -93,7 +95,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/*" element={<Header />}>
       <Route path="" element={<Root />} />
-      <Route path="learn" element={<Learn />}>
+      <Route path="learn" element="">
         {components.map(({ path, component: Component }) => {
           return <Route key={path} path={path} element={<Component />} />;
         })}
