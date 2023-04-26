@@ -1,16 +1,13 @@
 ---
-title : Github flow Development conventions
-slug :
-tags :
 date: 2023-03-31
-modified: 2023-03-31
+modified: 2023-04-24
 ---
 
 ## Issuses Convention
 
 작성 시 Assignees 본인으로 설정
 라벨 Priority , Status , Tpye , Category 붙이기
-작업 현황 체크 ( 작업 내역이라 하면 몰아서 쓰게 되니 "작업 현황"으로 )
+작업 현황 체크 ( 작업 내역이라 하면 몰아서 쓰게 되니 " 작업 현황 " 으로 )
 
 ## Pull request Convention
 

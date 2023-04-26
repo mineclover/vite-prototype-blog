@@ -1,9 +1,6 @@
 ---
-title:
-slug:
-tags:
 date: 2023-03-18
-modified: 2023-03-26
+modified: 2023-04-24
 ---
 
 ## 소개

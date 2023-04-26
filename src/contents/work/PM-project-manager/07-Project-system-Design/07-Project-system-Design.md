@@ -1,9 +1,6 @@
 ---
-title :
-slug :
-tags :
 date: 2023-03-31
-modified: 2023-04-03
+modified: 2023-04-24
 ---
 
 사전 설계 할 수 있는 내용들

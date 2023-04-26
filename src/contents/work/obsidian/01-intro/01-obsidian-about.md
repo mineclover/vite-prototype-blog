@@ -1,10 +1,7 @@
 ---
-title: obsidian 개발 활용 방법 with 세팅
-slug: src/contents/work/obsidian/01-intro/01-intro
-tags:
 aliases: 작성 예시
 date: 2023-03-03
-modified: 2023-03-04
+modified: 2023-04-24
 ---
 
 ## 장점 소개

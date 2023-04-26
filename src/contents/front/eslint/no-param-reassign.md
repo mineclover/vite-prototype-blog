@@ -1,6 +1,6 @@
 ---
 date: 2023-03-12
-modified: 2023-03-13
+modified: 2023-04-24
 ---
 
 리덕스에서 아래 구문 중 state 가 `no-param-reassign` 를 위반한다

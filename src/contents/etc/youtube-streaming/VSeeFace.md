@@ -1,7 +1,7 @@
 ---
 
 date: 2023-04-06
-modified: 2023-04-06
+modified: 2023-04-24
 ---
 [VSeeFace](https://www.vseeface.icu/)
 초기 튜토리얼이 꽤 잘되있다

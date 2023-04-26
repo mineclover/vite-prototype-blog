@@ -1,7 +1,6 @@
 ---
-title:
-slug:
-tags:
+date: 2023-03-15
+modified: 2023-04-24
 ---
 
 ## 소개
@@ -9,7 +8,7 @@ tags:
 블로그의 라우터를 메뉴와 서브 메뉴 그 외 작업에 일괄적으로 적용하기 위해서 구조화할 필요가 있었다
 나는
 폴더를 front , back , blog 등으로 관리하고 내부에 포스팅 별로 폴더를 만들어서 관리한다
-포스팅을 위한 코딩은 내부에 index.tsx 를 사용하지만 일단 포괄하면 .tsx를 쓴다
+포스팅을 위한 코딩은 내부에 index.tsx 를 사용하지만 일단 포괄하면 .tsx 를 쓴다
 
 아무튼 이러한 것은 확실하게 폴더를 베이스로 제작되고 있으며
 첫번째 dedth 는 categores 두번째는 subject 세번째는 post 로 되어있다
@@ -24,7 +23,7 @@ tags:
 ### routeMapping
 
 이 코드는 어 이 코드는 전체 콘텐츠를 매핑하는 목적으로 되어 있어서 origin 도 저장을 하는데
-origin은 post 이다
+origin 은 post 이다
 여기서 나는 자바스크립트의 원래 동작이 객체를 참조형으로 가져오는 거를 이용해서
 가져온 객체의 그대로 저장을 하는 방식을 사용했고
 코드는 라우터 선언과 확장에도 사용되었다
@@ -45,7 +44,7 @@ export const routeMapping = (
 
 ### 컴포넌트 , 마크다운 데이터
 
-slice에서 post와 markdown이 분리되어 있다
+slice 에서 post 와 markdown 이 분리되어 있다
 이는 저장할 떄부터 그렇게 해서 그렇다
 
 ```tsx
@@ -124,7 +123,7 @@ const markdowns = Object.keys(markdown).map((component) => {
 });
 ```
 
-그냥 간단하게 컴포넌트들은 처음 가져올 때부터 컴포넌트를 리포트한 다음에 라우팅을 해서 라우터의 Outlet을 잘 사용할 수 있게 작업하였음
+그냥 간단하게 컴포넌트들은 처음 가져올 때부터 컴포넌트를 리포트한 다음에 라우팅을 해서 라우터의 Outlet 을 잘 사용할 수 있게 작업하였음
 자세한 내용은 [vite-glob](../../../work/vite/vite-glob.md)
 
 ## 리액트로 객체 데이터 전달

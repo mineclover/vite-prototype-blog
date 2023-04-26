@@ -1,6 +1,6 @@
 ---
 date: 2023-03-09
-modified: 2023-03-09
+modified: 2023-04-24
 ---
 
 흠 .. 다른 사람이 초기 세팅을 햇는데 에어비엔비 설치만 하고 적용을 안해둠
@@ -53,7 +53,7 @@ npx eslint --init
 [CRA에 ESLint 와 Prettier 적용하기](https://velog.io/@sonic/CRA%EC%97%90-ESLint-%EC%99%80-Prettier-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0)
 린트가 다양한 상황들에 규칙들을 정하는 건데
 라이브러리의 규모가 좀 크기 때문에
-일단 Default로 설정하고 , 아는 세팅을 추가해나가는 방식이 좋다
+일단 Default 로 설정하고 , 아는 세팅을 추가해나가는 방식이 좋다
 
 설명에 잘 나와있고, 설정이 필요 없는 경우가 잘 나와있다
 extends 에 :recommended 붙이는 건 스텐다드 세팅을 하는 것으로

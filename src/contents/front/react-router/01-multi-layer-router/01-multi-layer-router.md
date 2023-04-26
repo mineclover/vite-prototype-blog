@@ -1,9 +1,6 @@
 ---
-title :
-slug :
-tags :
 date: 2023-03-06
-modified: 2023-03-06
+modified: 2023-04-24
 ---
 
 ## 소개
@@ -45,14 +42,13 @@ modified: 2023-03-06
 
 여기서 "" 은 그 주소에 대한 임시 홈이 되는 기능을 가지고 있다
 
-
-## PostRouter는 어떻게 썼는지
+## PostRouter 는 어떻게 썼는지
 
 아직 개선할 부분이 있다
 subject 을 반영하지 않았다
 이거 약간 문제가 있는데...
-`:subject`도 가져오는 요소가 있다
-어짜피 outlet으로 컴포넌트 분리가 가능하긴 하지
+`:subject` 도 가져오는 요소가 있다
+어짜피 outlet 으로 컴포넌트 분리가 가능하긴 하지
 
 ```tsx
 import { Navigate, useParams } from 'react-router-dom';

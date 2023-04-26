@@ -1,9 +1,6 @@
 ---
-title:
-slug:
-tags:
 date: 2023-03-15
-modified: 2023-03-19
+modified: 2023-04-24
 ---
 
 ## 소개
@@ -18,7 +15,7 @@ busboy, multiparty, formidable,multer 가 있다고 한다
 나는 multipart/form-data 를 사용하기로 했다
 
 - 작업 중 multer 를 알게 되어 쓰게 됬다
-  아 진짜 백앤드 어렵다는 걸 알 수 있었다...
+	아 진짜 백앤드 어렵다는 걸 알 수 있었다...
 
 사실 네이버 OCR 을 받기 위한 기능을 구현하고 있었는데
 백엔드에서 pdf 받는 부분은 로직을 너무 늦게 보여줘가지고 그냥 내가 만들어서 쓰고 있음
@@ -104,7 +101,7 @@ data 에는 axios config 를 넣을 수 없다
 axios.post(url[, data[, config]])
 ```
 
-axios의 인터셉터를 통해서
+axios 의 인터셉터를 통해서
 progressEvent 를 넣으려하다가 알게 됬다
 
 ```ts
@@ -145,7 +142,7 @@ axios.post('/api/users/uploadimage', formData, config);
 string 이 아닌 것은 다 blob 으로 만들어야할 것 같음
 
 json 으로 처리되는 것들은 data 에 다른 값으로 넣어서 보낼 수 있지 않을가 싶다
-여기서 test는 formData에 들어가는 키 값이다 
+여기서 test 는 formData 에 들어가는 키 값이다
 
 ```ts
 const formData = new FormData();

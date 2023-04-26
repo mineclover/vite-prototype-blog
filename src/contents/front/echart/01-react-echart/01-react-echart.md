@@ -1,10 +1,9 @@
 ---
-title :
-slug :
-tags :
+date: 2023-03-30
+modified: 2023-04-24
 ---
-## 소개
 
+## 소개
 
 [React에서 ECharts 사용하기](https://velog.io/@chojs28/React%EC%97%90%EC%84%9C-ECharts-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
 

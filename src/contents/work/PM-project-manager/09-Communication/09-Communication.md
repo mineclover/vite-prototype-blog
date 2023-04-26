@@ -1,9 +1,6 @@
 ---
-title :
-slug :
-tags :
 date: 2023-04-16
-modified: 2023-04-16
+modified: 2023-04-24
 ---
 
 ## 문서화 시스템

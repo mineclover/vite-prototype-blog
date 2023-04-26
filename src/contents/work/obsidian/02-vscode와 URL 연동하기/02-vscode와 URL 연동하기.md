@@ -1,9 +1,6 @@
 ---
-title:
-slug:
-tags:
 date: 2023-03-05
-modified: 2023-03-05
+modified: 2023-04-24
 ---
 
 ## 소개
@@ -22,7 +19,7 @@ modified: 2023-03-05
 생성할 때의 구분은 /로 하게 된다
 선택할 때는 생략되어 선택해도 폴더를 정상적으로 선택한다
 파일은 보통 확장자가 있다
-( 실제로 , 폴더를 abc로 만들고 파일을 abc 로 만들면 이미 있다고 한다 )
+( 실제로 , 폴더를 abc 로 만들고 파일을 abc 로 만들면 이미 있다고 한다 )
 
 ```
 vscode://file/P:\Dev\react-playground\src\contents\front\css\01-border-line\index.tsx
@@ -32,8 +29,8 @@ vscode://file/P:\Dev\react-playground\src\contents\front\css\01-border-line\inde
 URL 넣듯 링크에 넣는다
 아래 설정을 하더라도 폴더가 자동으로 열리진 않고 단일 파일로 열린다
 
-1. 단일 파일로 열리는데 vscode가 꺼져있는 상태에선 파일만 연다
-   ![](file/02-vscode와%20URL%20연동하기.png)
+1. 단일 파일로 열리는데 vscode 가 꺼져있는 상태에선 파일만 연다
+	 ![](file/02-vscode와%20URL%20연동하기.png)
 2. 기존에 다른 프로젝트 폴더를 열어놨을 경우 해당 파일만 현재 프로젝트에서 열린다
 3. 이미 열린 프로젝트의 하위 항목을 단일 파일로 열 경우 해당 vscode 탐색기에서 그 파일을 연다
 

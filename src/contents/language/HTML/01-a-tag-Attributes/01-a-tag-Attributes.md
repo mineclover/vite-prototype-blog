@@ -1,9 +1,6 @@
 ---
-title:
-slug:
-tags:
 date: 2023-03-23
-modified: 2023-03-23
+modified: 2023-04-24
 ---
 
 ## 소개
@@ -28,7 +25,7 @@ h1~h6 에 id 가 부여되어있으면 `#tilte` 같은 걸로 id 가 위치한 �
 ### a href 를 적용하려해봤다
 
 왜인지 적용이 잘 안됬다
-일단 link to를 쓰면 순수한 href 이 안나오고 parms + href 이 붙게 된다 , `/~` 를 하게되면 baseUrl 기준의 링크가 되기 때문에 소용이 없었음
+일단 link to 를 쓰면 순수한 href 이 안나오고 parms + href 이 붙게 된다 , `/~` 를 하게되면 baseUrl 기준의 링크가 되기 때문에 소용이 없었음
 
 ### 그냥 함수로 만들어서 이동하게 했다
 

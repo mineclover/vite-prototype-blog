@@ -1,9 +1,6 @@
 ---
-title:
-slug:
-tags:
 date: 2023-03-03
-modified: 2023-03-03
+modified: 2023-04-24
 ---
 
 zod 기반으로 RHF 를 만들꺼고

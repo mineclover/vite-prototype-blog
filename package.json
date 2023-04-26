@@ -12,7 +12,10 @@
     "pretest": "npm run lint",
     "format": "prettier --loglevel warn --write \"**/*.{ts,tsx,css,md}\"",
     "posttest": "npm run format",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "marco": "npm run macro --prefix ./docusaurus",
+    "setup": "git clone https://github.com/mineclover/my-blog.git docusaurus && npm install --prefix ./docusaurus && npm run setup --prefix docusaurus",
+    "upload": "git add . && git commit -m \"$(date '+%Y-%m-%d %H:%M:%S')\" && git push && npm run upload --prefix ./docusaurus"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
@@ -30,7 +33,7 @@
     "react-router-dom": "^6.9.0",
     "redux-persist": "^6.0.0",
     "sass": "^1.58.3",
-    "sort-by": "^1.2.0",
+    "sort-by": "^0.0.2",
     "styled-components": "^5.3.8",
     "styled-reset": "^4.4.5",
     "zod": "^3.20.6"
@@ -56,7 +59,7 @@
     "lint-staged": "^13.2.0",
     "prettier": "^2.8.4",
     "typescript": "^4.9.5",
-    "vite": "^4.1.0",
+    "vite": "^4.3.1",
     "vite-plugin-remark-rehype": "^0.1.0"
   },
   "engines": {

@@ -1,7 +1,8 @@
 ---
 date: 2023-03-24
-modified: 2023-03-26
+modified: 2023-04-24
 ---
+
 우선 build 를 하면 html 로 된 페이지들이 생성되고
 deploy 에서는 git user 세팅을 필요로 한다
 Please set the GIT_USER environment variable, or explicitly specify USE_SSH instead!
@@ -21,3 +22,7 @@ Please set the GIT_USER environment variable, or explicitly specify USE_SSH inst
 카테고리가 나뉘여야한다
 
 어느정도 예측가능하지만 실제 적용과는 거리가 있다
+
+## 린트와 허스키
+
+md 파일에 필수 스키마 검사 eslint 만들기

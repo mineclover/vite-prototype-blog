@@ -1,6 +1,6 @@
 ---
 date: 2023-03-03
-modified: 2023-03-20
+modified: 2023-04-24
 ---
 
 ## handleSubmit, register 특징
@@ -16,7 +16,7 @@ register 의 경우 onChange, onBlur 등을 키 값으로 하고 콜백을 value
 기본적인 코드는 아래와 같다
 
 - 설명할 때에는 RHF(React-Hook-Form) 으로 축약해서 사용함
-  [Get Started | React Hook Form - Simple React forms validation](https://react-hook-form.com/get-started/#Quickstart)
+	[Get Started | React Hook Form - Simple React forms validation](https://react-hook-form.com/get-started/#Quickstart)
 
 ```jsx
 import { useForm } from 'react-hook-form';
@@ -50,11 +50,9 @@ export default function App() {
 }
 ```
 
-
 ## form 감싸는 방법
 
 제어해야 할 input 이나 전송 상황을 트리거 해주는 submit 타입의 버튼을 감싸기만 하면 된다
-
 
 ## 사용된 개념
 
