@@ -27,7 +27,7 @@ modified: 2023-04-24
 ## 18 에 추가된 기능
 
 1. useId
-	1. uuid 같은 것
+   1. uuid 같은 것
 2. useTransition
 3. useDeferredValue
 4. useSyncExternalStore
@@ -57,7 +57,6 @@ useEffect
 ## useSWR 와 ReactQuery
 
 SWR 은 stale while revalidating 의 약자
-
 
 [전역 상태관리 라이브러리들](전역%20상태관리%20라이브러리들.md)
 

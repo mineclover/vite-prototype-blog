@@ -11,8 +11,6 @@ get 방식으로 할 때는 URL URLSearchParams 쿼리를 쓴다
 
 이걸 axios 에서는 config 에서 params 에 담아 렌더링 한다
 
-
-
 > [!NOTE] axios 번역체
 > `params` 은 요청과 함께 전송되는 URL 파라미터입니다.
 > 반드시 일반 객체나 URLSearchParams 객체여야 합니다.
@@ -41,7 +39,7 @@ formData 변수의 이름은 abc 여도 동작한다
 
 ```js
 const formData = new FormData();
-    instance.post('upload', formData, config);
+instance.post('upload', formData, config);
 ```
 
 [CORS 에러였던 API 연결 문제](../../work/PM-project-manager/etc-트러블슈팅/CORS%20에러였던%20API%20연결%20문제.md)

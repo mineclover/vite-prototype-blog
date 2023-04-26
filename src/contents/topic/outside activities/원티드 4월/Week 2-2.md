@@ -14,9 +14,6 @@ Server Side Rendering, Client Side Rendering, BFF,
 - 프론트엔드 디자인패턴과 테스트코드
 - [아하!모먼트] 취업/이직을 준비하는 나만의 방법
 
-
-
-
 [Server Side Rendering은 정말 빠르게 render 되는가 - Byeongjin Jason Kang](https://jasonkang14.github.io/nextjs/is-server-side-rendering-really-faster)
 
 ## 행동 단위 성능 검사
@@ -34,8 +31,6 @@ test 로 실행시키고
 [프론트엔드 역사와 미래, 업무 분야 ... 그리고 잘하는 프론트엔드 개발자란?](https://velog.io/@teo/frontend)
 꾸준히 업데이트 하기
 제안서 작성하기
-
-
 
 유리프트 : 대표가 짱짱한 회사?
 
@@ -56,7 +51,6 @@ test 로 실행시키고
 ## 최적화
 
 ![](file/Week%202-2.png)
-
 
 [Site Unreachable](https://web.dev/code-splitting-suspense/)
 suspense , lazy

@@ -27,11 +27,10 @@ $.get(ROOT_PATH + '/data/asset/data/nutrients.json', function (originData) {
 
 ```tsx
 const [value, setValue] = useState('');
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    urlGet('https://jsonplaceholder.typicode.com/todos/2', (data) => {
-    });
-  };
+const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  urlGet('https://jsonplaceholder.typicode.com/todos/2', (data) => {});
+};
 ```
 
 // 모듈 구간

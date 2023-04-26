@@ -16,7 +16,7 @@ register 의 경우 onChange, onBlur 등을 키 값으로 하고 콜백을 value
 기본적인 코드는 아래와 같다
 
 - 설명할 때에는 RHF(React-Hook-Form) 으로 축약해서 사용함
-	[Get Started | React Hook Form - Simple React forms validation](https://react-hook-form.com/get-started/#Quickstart)
+  [Get Started | React Hook Form - Simple React forms validation](https://react-hook-form.com/get-started/#Quickstart)
 
 ```jsx
 import { useForm } from 'react-hook-form';

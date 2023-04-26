@@ -2,6 +2,7 @@
 date: 2023-04-04
 modified: 2023-04-24
 ---
+
 ＃특화
 
 ## 소개
@@ -10,7 +11,6 @@ modified: 2023-04-24
 
 [Render more than string | React-Toastify](https://fkhadra.github.io/react-toastify/render-what-you-want)
 
-
 Context 는 리액트 컴포넌트 외부에서도 선언할 수 있고
 
 useState 가 사용된 함수는 조건부 렌더링이 되는 함수가 된다
@@ -18,8 +18,8 @@ useState 값이 들어있는 Context.Provider 도 필요할 떄 렌더링 될 �
 해당 변수에 {...props} 는 필수로 들어가야하는 모양임 Children 들을 아래로 전달해줘야하기 때문이지..
 
 ```jsx
-import React from "react";
-import { ToastContainer, toast } from "react-toastify";
+import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
 
 const CountContext = React.createContext(null);
 
@@ -55,9 +55,7 @@ export const ContextExample = () => {
     <CountProvider>
       <Container>
         <Counter />
-        <Button onClick={displayToast}>
-          Display toast
-        </Button>
+        <Button onClick={displayToast}>Display toast</Button>
       </Container>
       <ToastContainer autoClose={false} draggable={false} />
     </CountProvider>

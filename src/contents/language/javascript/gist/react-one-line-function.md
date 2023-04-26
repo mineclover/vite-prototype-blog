@@ -11,10 +11,10 @@ ternary operator
 
 ```jsx
 <div>
-	progressLoad / ProgressTotal:{' '}
-	{isNumber(progressLoad / ProgressTotal)
-		? `${((progressLoad / ProgressTotal) * 100).toFixed(2)}%`
-		: '파일을 넣어주세요'}
+  progressLoad / ProgressTotal:{' '}
+  {isNumber(progressLoad / ProgressTotal)
+    ? `${((progressLoad / ProgressTotal) * 100).toFixed(2)}%`
+    : '파일을 넣어주세요'}
 </div>
 ```
 

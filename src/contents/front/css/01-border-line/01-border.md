@@ -7,7 +7,7 @@ modified: 2023-04-24
 
 ### `border-radius`
 
- `border-radius: (왼쪽 위) (오른쪽 위) (오른쪽 아래) (왼쪽 아래);`
+`border-radius: (왼쪽 위) (오른쪽 위) (오른쪽 아래) (왼쪽 아래);`
 모서리에 적용되는 것이고 시계 방향으로 적용할 수 있다
 
 ### `border-{position}`

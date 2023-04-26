@@ -47,6 +47,7 @@ nestJS 로 개발한다면 이걸 통해서 테스트 케이스를 접할 수 �
 [CHAP 02. TDD 시작 - Incheol's TECH BLOG](https://incheol-jung.gitbook.io/docs/study/undefined-3/chap-02.-tdd)
 
 nestia 는 단위테스트 통합테스트를 해준다고 한다는데 본인 피셜이기 때문에 사용성 측면의 검토가 필요할 것으로 보인다
+
 > nestia 쓰면 e2e 로 테스트만 직접하면 된다 함 > 몰루..?
 
 ## 프론트의 TDD

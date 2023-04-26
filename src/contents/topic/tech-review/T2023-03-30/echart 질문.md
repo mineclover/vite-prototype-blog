@@ -2,6 +2,7 @@
 date: 2023-03-30
 modified: 2023-04-24
 ---
+
 `echarts-for-react` 에서 regression 스타일을 적용하는 방법은 `option` 객체 내에서 `series` 속성을 설정하면 됩니다. 아래는 예시 코드입니다.
 
 ```javascript
@@ -13,20 +14,20 @@ const data = [
   [2, 3],
   [3, 6],
   [4, 8],
-  [5, 9]
+  [5, 9],
 ];
 
 const option = {
   xAxis: {
-    type: 'value'
+    type: 'value',
   },
   yAxis: {
-    type: 'value'
+    type: 'value',
   },
   series: [
     {
       type: 'scatter',
-      data: data
+      data: data,
     },
     {
       type: 'line',
@@ -35,10 +36,10 @@ const option = {
       lineStyle: {
         color: '#f00',
         width: 2,
-        type: 'dashed'
-      }
-    }
-  ]
+        type: 'dashed',
+      },
+    },
+  ],
 };
 
 function getRegression(data) {

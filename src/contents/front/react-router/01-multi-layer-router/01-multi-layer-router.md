@@ -80,5 +80,4 @@ const PostRouter = (props: Props) => {
 };
 
 export default PostRouter;
-
 ```

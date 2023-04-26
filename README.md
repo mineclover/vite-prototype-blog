@@ -1,10 +1,28 @@
 # 사용 전 체크
 
+## 세팅
+
+### 편집 방법
+
 .obsidian을 가져와서 쓰는 것을 권장함
+기본적으로 해당 파일을 무시하고 있고 옵시디언으로 관리되는 리소스인
+contents 폴더에 넣으면 됨
+
+### 종속성
+
+일단 블로그 두개를 쓰고 있고 a와 b를 왕래한다
+그래서
+
+프리뷰 블로그를 배포하는 최상위 폴더가 있고
+같은 폴더 구조를 가지는 정적 블로그인 docusaurus 블로그를
+배포 시키는 docusaurus 를 안에 넣어두고 있고
+그 안에는 프리뷰 블로그에서 필요한 것만 뽑는 객체가 따로 있음
+
+실질적으로 편집하는 파일이 하나기 때문에 분리해서 배포하는 작업을 넣었다
+
 피그마 체크 할 것 : [피그마](https://www.figma.com/file/JTgfhaiAm9mWAqbmChCEYo/react-playground?node-id=0%3A1&t=oczIrWhWazX5AhPN-1)
 
 [배포 프리뷰](https://zippy-lamington-f8a667.netlify.app/)
-
 
 # 폴더 네이밍
 
@@ -18,63 +36,9 @@ md파일들은 도큐사우르스 도입을 고려하고 있음
 
 ## 폴더의 이름은 소문자로 통일
 
-- 폴더간의 혼선과 import 에러를 방지하기 위함이였으나 되긴 된다 성능이 좋네
-- 링크로 사용할 예정이고 폴더 구조를 그대로 가져오는 vite 기능을 사용할 계획임
+- 폴더간의 혼선과 import 에러를 방지하기 위함이였으나 한글도 되긴 된다 성능이 생각보다 좋았음
+- 링크로 사용할 예정이고 폴더 구조를 그대로 가져오는 vite 기능을 사용하고 있음
   소문자 형태임을 감안하고 작업할 것으로 통일하기 위함
+  그래서 링큰는 도메인을 제외하고 동일하게 되어있을 것임
 
 ## 컴포넌트는 하나의 파일에서 관리하고, 폴더의 메인 컴포넌트는 index로 지정한다
-
-:post 에 해당하게 될 컨텐츠들의 폴더는 번호 넘버링을 사용함
-하나의 post 주제에서 사용되는 여러 페이지들은 01.01 처럼 하위 넘버링을 통해 구분함
-이는 페이지의 순서를 보장해서 정렬을 간소화, 자동화하기 하기 위함
-
-## 예시
-
-### layout
-
-- header
-  - index.tsx
-  - Buttons.tsx
-- footer
-
-### pages
-
-- main
-- dashboard
-- test
-- learn
-
-### contents
-
-- front
-  - index.tsx
-  - 사용 컴포넌트.tsx
-  - react
-    - 01-포스팅 이름
-      - index.tsx
-      - Button.tsx
-      - Test.tsx
-    - 01.01-예시 페이지
-      - index.tsx
-      - components
-  - axios
-    - 01-포스팅 이름
-      - index.tsx
-      - Button.tsx
-      - Test.tsx
-    - 01.01-예시 페이지
-      - index-tsx
-      - components
-  - react-hooks
-- back
-  - node
-    - 01-포스팅 이름
-      - index.tsx
-      - Button.tsx
-      - Test.tsx
-    - 01.01-예시 페이지
-      - index.tsx
-      - components
-      -
-  - next
-  - python

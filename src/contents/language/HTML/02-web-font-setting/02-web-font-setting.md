@@ -28,7 +28,8 @@ modified: 2023-04-24
 
 ```css
 body {
-  font-family: "NanumGothic", "NanumGothicOTF", "Nanum Gothic", "Apple SD Gothic Neo", "Malgun Gothic", "sans-serif";
+  font-family: 'NanumGothic', 'NanumGothicOTF', 'Nanum Gothic',
+    'Apple SD Gothic Neo', 'Malgun Gothic', 'sans-serif';
 }
 ```
 
@@ -51,6 +52,7 @@ FOFT 란? 웹 폰트 파일에 font-weight, font-style 과 관련된 서체가 �
 ## Google Webfont Loader
 
 장점은 html 에 로딩 상태가 클래스로 부여된다고 한다
+
 > 2017 년 자료에 나온다
 
 wf-loading: 1 개 이상 폰트가 로딩 중
@@ -118,7 +120,7 @@ as 속성을 넣어주는 값으로 우선순위가 달라진다
 <link rel="preload" href="/path/to/sourceserif-regular.woff2" as="font" type="font/woff2" crossorigin>
 ```
 
-위 방식대로 하는 것인데 ` type="font/woff2" ` 은 생략 가능한 것인지 사용하지 않는 예제도 있었다
+위 방식대로 하는 것인데 `type="font/woff2"` 은 생략 가능한 것인지 사용하지 않는 예제도 있었다
 
 ## 참고
 

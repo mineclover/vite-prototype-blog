@@ -15,16 +15,16 @@ modified: 2023-04-24
 [open-graph-scraper 사용하기](https://peachsoong.tistory.com/62)
 
 ```html
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://example.com/page.html">
-<meta property="og:title" content="Content Title">
-<meta property="og:image" content="https://example.com/image.jpg">
-<meta property="og:description" content="Description Here">
-<meta property="og:site_name" content="Site Name">
-<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://example.com/page.html" />
+<meta property="og:title" content="Content Title" />
+<meta property="og:image" content="https://example.com/image.jpg" />
+<meta property="og:description" content="Description Here" />
+<meta property="og:site_name" content="Site Name" />
+<meta property="og:locale" content="en_US" />
 <!-- 다음의 태그는 필수는 아니지만, 포함하는 것을 추천함 -->
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
 ```
 
 ## 찾아보니 node 를 거쳐서 og 를 가져와야한다 react 내장은 없나?

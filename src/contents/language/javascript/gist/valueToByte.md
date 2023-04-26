@@ -8,11 +8,12 @@ byte 표기를 위해서 사용
 
 ```js
 const valueToByte = (value: number) => {
-    if (value < 1024) return `${value}B`;
-    if (value < 1024 * 1024) return `${(value / 1024).toFixed(2)}KB`;
-    if (value < 1024 * 1024 * 1024) return `${(value / 1024 / 1024).toFixed(2)}MB`;
-    return `${(value / 1024 / 1024 / 1024).toFixed(2)}GB`;
-  };
+  if (value < 1024) return `${value}B`;
+  if (value < 1024 * 1024) return `${(value / 1024).toFixed(2)}KB`;
+  if (value < 1024 * 1024 * 1024)
+    return `${(value / 1024 / 1024).toFixed(2)}MB`;
+  return `${(value / 1024 / 1024 / 1024).toFixed(2)}GB`;
+};
 ```
 
 선택하는 방식으로 수정
@@ -20,12 +21,12 @@ const valueToByte = (value: number) => {
 
 ```js
 type ValueToByte = (value: number, type: 'B' | 'KB' | 'MB' | 'GB') => string;
-  const valueToByte: ValueToByte = (value, type) => {
-    if (type === 'B') return `${value}B`;
-    if (type === 'KB') return `${(value / 1024).toFixed(2)}KB`;
-    if (type === 'MB') return `${(value / 1024 / 1024).toFixed(2)}MB`;
-    if (type === 'GB') return `${(value / 1024 / 1024 / 1024).toFixed(2)}GB`;
-    console.error('valueToByte type 설정이 잘못되었음');
-    return `${(value / 1024 / 1024).toFixed(2)}MB`;
-  };
+const valueToByte: ValueToByte = (value, type) => {
+  if (type === 'B') return `${value}B`;
+  if (type === 'KB') return `${(value / 1024).toFixed(2)}KB`;
+  if (type === 'MB') return `${(value / 1024 / 1024).toFixed(2)}MB`;
+  if (type === 'GB') return `${(value / 1024 / 1024 / 1024).toFixed(2)}GB`;
+  console.error('valueToByte type 설정이 잘못되었음');
+  return `${(value / 1024 / 1024).toFixed(2)}MB`;
+};
 ```
