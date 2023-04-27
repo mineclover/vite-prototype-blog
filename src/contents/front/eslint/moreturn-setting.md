@@ -1,6 +1,6 @@
 ---
 date: 2023-03-09
-modified: 2023-04-24
+modified: 2023-04-27
 ---
 
 흠 .. 다른 사람이 초기 세팅을 햇는데 에어비엔비 설치만 하고 적용을 안해둠
@@ -118,14 +118,14 @@ npm i -D eslint-config-prettier eslint-plugin-prettier eslint-config-airbnb esli
   },
 ```
 
-[eslint-plugin-react/jsx-filename-extension](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md)
+[eslint-plugin-react/jsx-filename-extension](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension)
 
 no-unexpected-multiline 에 대한 오류와 관련된 eslint-semi 도 보면 좋다
 [semi - ESLint - Pluggable JavaScript Linter](https://eslint.org/docs/latest/rules/semi)
 
 ##### eslint-import 에 기능이 은근 많았다
 
-[eslint-plugin-import/order.md at main · import-js/eslint-plugin-import · GitHub](https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/order.md)
+[eslint-plugin-import/order.md at main · import-js/eslint-plugin-import · GitHub](https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/order)
 
 ##### import/no-unresolved
 

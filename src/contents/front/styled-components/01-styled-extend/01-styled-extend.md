@@ -1,6 +1,6 @@
 ---
 date: 2023-03-23
-modified: 2023-04-24
+modified: 2023-04-27
 ---
 
 ## 소개
@@ -44,4 +44,4 @@ const Anchor = styled(Button.withComponent('a'))`
 
 ## 확장 기능 사용시 있었던 헤프닝
 
-[01-a-tag-Attributes](../../../language/HTML/01-a-tag-Attributes/01-a-tag-Attributes.md)
+[a-tag-Attributes](../../../language/HTML/a-tag-Attributes/a-tag-Attributes)

@@ -1,6 +1,6 @@
 ---
 date: 2023-04-01
-modified: 2023-04-24
+modified: 2023-04-27
 ---
 
 ## isNumber
@@ -91,7 +91,7 @@ const isNumber = (value: any) => {
 ```
 
 `value = Number(value);` 쓰다가 아래 린트 오류가 떠서 린트의 이유를 작성 했다
-[Error-no-param-reassign](../../../front/eslint/Error-no-param-reassign.md)
+[Error-no-param-reassign](../../../front/eslint/Error-no-param-reassign)
 
 내가 걱정하는 것은 '1234' 에 의한 숫자 에러인데
 `if (value === null || typeof value === 'string') {`

@@ -1,7 +1,7 @@
 ---
 aliases: pico
 date: 2023-04-10
-modified: 2023-04-25
+modified: 2023-04-27
 ---
 
 [Pico.css • Minimal CSS Framework for semantic HTML](https://picocss.com/)

@@ -1,6 +1,6 @@
 ---
 date: 2023-04-06
-modified: 2023-04-24
+modified: 2023-04-27
 ---
 
 ## Week 1-1
@@ -19,5 +19,3 @@ modified: 2023-04-24
 [React - Render and Commit](https://velog.io/@jinyoung234/Render-and-commit) 리뷰한 포스팅
 
 ## 강의자료
-
-![](file/React%20VirtualDOM.pdf)

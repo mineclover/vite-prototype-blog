@@ -1,6 +1,6 @@
 ---
 date: 2023-04-04
-modified: 2023-04-24
+modified: 2023-04-27
 ---
 
 [요청 Config | Axios Docs](https://axios-http.com/kr/docs/req_config)
@@ -42,4 +42,4 @@ const formData = new FormData();
 instance.post('upload', formData, config);
 ```
 
-[CORS 에러였던 API 연결 문제](../../work/PM-project-manager/etc-트러블슈팅/CORS%20에러였던%20API%20연결%20문제.md)
+[CORS 에러였던 API 연결 문제](../../work/PM-project-manager/etc-트러블슈팅/CORS%20에러였던%20API%20연결%20문제)
