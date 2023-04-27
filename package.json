@@ -14,7 +14,7 @@
     "posttest": "npm run format",
     "prepare": "husky install",
     "test": " npm run macro --prefix ./docusaurus && npm run build --prefix ./docusaurus ",
-    "deploy": " npm run macro --prefix ./docusaurus && npm run deploy --prefix ./docusaurus ",
+    "deploy": " npm run macro --prefix ./docusaurus  && code docusaurus. && echo ",
     "marco": "npm run macro --prefix ./docusaurus",
     "sync": "git pull &npm run sync --prefix ./docusaurus & npm i && npm i",
     "setup": "git clone https://github.com/mineclover/my-blog.git docusaurus && npm install --prefix ./docusaurus && npm run setup --prefix docusaurus",

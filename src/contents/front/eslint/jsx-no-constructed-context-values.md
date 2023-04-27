@@ -1,6 +1,6 @@
 ---
 date: 2023-03-12
-modified: 2023-04-27
+modified: 2023-04-28
 ---
 
 react-icon 에서 디폴트 값을 설정하는 것을 바로 넣어놨더니 문제가 생겼엇음
@@ -9,6 +9,7 @@ react-icon 에서 디폴트 값을 설정하는 것을 바로 넣어놨더니 �
 function App() {
   return (
     <Provider store={store}>
+      q
       <PersistGate persistor={persistor}>
         <IconContext.Provider
           value={{
