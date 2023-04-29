@@ -1,6 +1,6 @@
 ---
 date: 2023-04-04
-modified: 2023-04-29
+modified: 2023-04-30
 ---
 
 glob 가 모듈들을 가져오는 구조가 dynamic-import 구조 인 것으로 보인다

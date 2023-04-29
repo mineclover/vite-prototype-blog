@@ -2,7 +2,7 @@
 sidebar_position: 1
 aliases: 작성 예시
 date: 2023-03-03
-modified: 2023-04-29
+modified: 2023-04-30
 ---
 
 ## 장점 소개

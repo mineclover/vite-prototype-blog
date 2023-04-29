@@ -1,6 +1,6 @@
 ---
 date: 2023-03-29
-modified: 2023-04-29
+modified: 2023-04-30
 ---
 
 ## 소개
@@ -25,3 +25,44 @@ dev_softer 에 실시간 스트리밍 마이크 끄고
 긱뉴스에서 재밌는게 나오면 메모하기 위함
 제로초 슬랙에서 올려주는 걸 간간이 몰아본다
 [GeekNews - 개발/기술/스타트업 뉴스 서비스](https://news.hada.io/)
+
+::: note
+
+옵시디언 데이터 시각화용 코드
+
+````dataviewjs
+function callout(text, type) {
+    const allText = `> [!${type}]\n` + text;
+    const lines = allText.split('\n');
+    return lines.join('\n> ') + '\n'
+}
+
+const query = `
+not done
+path includes ${dv.current().file.name}
+`;
+
+dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
+````
+
+---
+
+````dataviewjs
+function callout(text, type) {
+    const allText = `> [!${type}]\n` + text;
+    const lines = allText.split('\n');
+    return lines.join('\n> ') + '\n'
+}
+
+const path = dv.current().file.folder;
+
+const query = `
+TABLE  file.frontmatter.sidebar_position AS "순서", file.frontmatter.aliases AS "부제목", file.frontmatter.tags AS "태그", file.frontmatter.title AS "대체 제목", file.frontmatter.slug AS 경로
+FROM "${path}"
+SORT  file.frontmatter.sidebar_position, file.name
+`;
+
+dv.paragraph(callout('```dataview\n' + query + '\n```', 'INDEX ORDER'));
+````
+
+:::

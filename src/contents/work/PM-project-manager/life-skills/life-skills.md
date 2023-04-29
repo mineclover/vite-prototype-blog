@@ -1,7 +1,7 @@
 ---
 sidebar_position: 8
 date: 2023-04-15
-modified: 2023-04-29
+modified: 2023-04-30
 ---
 
 ## 시뮬레이션하기

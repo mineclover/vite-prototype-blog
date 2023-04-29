@@ -1,6 +1,6 @@
 ---
 date: 2023-04-03
-modified: 2023-04-29
+modified: 2023-04-30
 ---
 
 ternary operator

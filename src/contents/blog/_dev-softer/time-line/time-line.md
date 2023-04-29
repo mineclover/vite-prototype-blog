@@ -1,6 +1,6 @@
 ---
 date: 2023-03-03
-modified: 2023-04-29
+modified: 2023-04-30
 Project: P:\Dev\react-playground
 ---
 
@@ -25,7 +25,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 아직 안한 것
 
-- [ ] [문서 포멧 기반 자동 처리](https://github.com/mineclover/MDN-to-Markdown-for-obsidian)
+- [ ] [문서 포멧 기반 자동 처리](https://github.com/mineclover/MDN-to-Markdown-for-obsidian) , [Site Unreachable](https://github.com/mineclover/ObsidianMarkdown-to-docusaurus)
 - [ ] 리액트 문서 기반 공부
 - [ ] 블로그 제작
 
@@ -37,7 +37,6 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 %% Begin Waypoint %%
 
-- [01-Template](./01-Template.md)
 - [2023-03-03](./2023-03-03.md)
 - [2023-03-04](./2023-03-04.md)
 - [2023-03-06](./2023-03-06.md)
@@ -65,5 +64,6 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - [2023-04-25](./2023-04-25.md)
 - [2023-04-28](./2023-04-28.md)
 - [2023-04-29](./2023-04-29.md)
+- [2023-04-30](./2023-04-30.md)
 
 %% End Waypoint %%
