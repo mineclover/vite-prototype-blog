@@ -15,12 +15,10 @@ const data = {
 function App() {
   return (
     <Provider store={store}>
-      q
       <PersistGate persistor={persistor}>
         <IconContext.Provider value={data}>
           <RouterProvider router={Router} />
         </IconContext.Provider>
-
         <GlobalStyles />
       </PersistGate>
     </Provider>
@@ -52,7 +50,6 @@ const App = () => {
         <IconContext.Provider value={iconSetting}>
           <RouterProvider router={Router} />
         </IconContext.Provider>
-
         <GlobalStyles />
       </PersistGate>
     </Provider>
