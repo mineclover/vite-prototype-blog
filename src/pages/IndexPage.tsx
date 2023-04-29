@@ -18,8 +18,10 @@ import IconLinkBox from '@/global/iconLinkButton';
 import IconBlackLink from '@/global/iconBlankButton';
 import gotoID from '@/utils/gotoHashLink';
 
-const gitLink = 'https://github.com/mineclover/react-playground/blob/main/';
+const gitLink = 'https://github.com/mineclover/vite-prototype-blog/blob/main/';
 const vscodeURI = 'vscode://file/P:/Dev/react-playground/';
+const githubBlogLink = 'https://mineclover.github.io/';
+const obsidianURI = 'obsidian://open?vault=contents&file=';
 
 const App = () => {
   // item.origin은 URI를 위한 정보, 고유값도 됨
@@ -85,7 +87,7 @@ const App = () => {
               </IconLinkBox>
               {/* github 링크 */}
               <IconBlackLink
-                to={`${gitLink}${item.origin}`}
+                to={`${gitLink}src/contents/${item.origin}`}
                 key={`${gitLink}${item.origin}`}
                 size={32}
                 title="github 링크"
@@ -113,7 +115,7 @@ const App = () => {
               {nameExport(item.origin)}.md
               {/* 웹사이트 내에서 이동 */}
               <IconLinkBox
-                to={`/learn/${item.path}`}
+                to={`${githubBlogLink}docs/${item.path}/`}
                 size={32}
                 title="블로그는 작업 중"
               >
@@ -121,7 +123,7 @@ const App = () => {
               </IconLinkBox>
               {/* github 링크 */}
               <IconBlackLink
-                to={`${gitLink}${item.origin}`}
+                to={`${gitLink}src/contents/${item.origin}`}
                 size={32}
                 title="github 링크"
               >
@@ -129,7 +131,7 @@ const App = () => {
               </IconBlackLink>
               {/* 옵시디언 링크 */}
               <IconBlackLink
-                to={`obsidian://open?vault=react-playground&file=${item.origin}`}
+                to={`${obsidianURI}${item.origin}`}
                 size={32}
                 title="옵시디언 링크"
               >

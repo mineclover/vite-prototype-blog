@@ -14,11 +14,11 @@
     "posttest": "npm run format",
     "prepare": "husky install",
     "test": " npm run macro --prefix ./docusaurus && npm run build --prefix ./docusaurus ",
-    "deploy": " npm run macro --prefix ./docusaurus  && npm run dd --prefix ./docusaurus",
+    "deploy": "npm run upload && npm run macro --prefix ./docusaurus  && npm run dd --prefix ./docusaurus",
     "marco": "npm run macro --prefix ./docusaurus",
     "sync": "git pull &npm run sync --prefix ./docusaurus & npm i && npm i",
     "setup": "git clone https://github.com/mineclover/my-blog.git docusaurus && npm install --prefix ./docusaurus && npm run setup --prefix docusaurus",
-    "upload": "git add . && git commit -m \"변경 사항 일괄 저장\" && git push && npm run upload --prefix ./docusaurus"
+    "upload": "git add . && git commit -m \"변경 사항 일괄 저장\" && git push upstream main && npm run upload --prefix ./docusaurus"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",

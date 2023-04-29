@@ -7,7 +7,6 @@ import {
 import { routeMapping as rMapping } from '../utils/mappingUtils';
 
 import Header from '../layout/header';
-import Learn from '../layout/learn';
 import LearnIndex from '../pages/LearnIndex';
 import Root from '../pages/Root';
 import Dashboard from '../pages/Dashboard';
@@ -43,7 +42,8 @@ const componentsMap: MappingOrigin[] = [];
 const components = Object.keys(modules).map((component) => {
   const path = componentPathRegexFn(component);
   const splitPath = path.split('/');
-  const origin = component.replace(/^\.\.\/contents\//g, 'src/contents/');
+  const origin = component.replace(/^\.\.\/contents\//g, '');
+  console.log('🚀 ~ file: Router.tsx:46 ~ components ~ origin:', origin);
 
   componentsMap.push({
     origin,
@@ -67,7 +67,9 @@ const markdowns = Object.keys(markdown).map((component) => {
     .replace(/\/[0-9]{0,2}-/g, '/')
     .replace(/\/[^/]*.md$/g, '');
 
-  const origin = component.replace(/^\.\.\/contents\//g, 'src/contents/');
+  const origin = component.replace(/^\.\.\/contents\//g, '');
+  console.log('🚀 ~ file: Router.tsx:70 ~ markdowns ~ origin:', origin);
+
   const splitPath = path.split('/');
 
   return {
