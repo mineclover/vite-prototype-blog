@@ -1,14 +1,24 @@
 ---
 date: 2023-03-03
-modified: 2023-04-27
+modified: 2023-04-29
 ---
 
 ```dataview
 LIST "File Path: " + file.path
-WHERE date(file.frontmatter.date) > date({{date}}) - dur(1 day) AND date(file.frontmatter.date) < date({{date}}) + dur(1 day)
+WHERE date(file.frontmatter.date) > date({
+{date}
+}) - dur(1 day) AND date(file.frontmatter.date) < date({
+{date}
+}) + dur(1 day)
 ```
 
-[{{date}} daily tech note](../../topic/tech-review/T{{date}}/T{{date}})
+[{
+{date}
+} daily tech note](../../topic/tech-review/T{
+{date}
+}/T{
+{date}
+})
 
 ## 한 일
 

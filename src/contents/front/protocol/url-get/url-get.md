@@ -1,7 +1,7 @@
 ---
 sidebar_position: 5
 date: 2023-03-31
-modified: 2023-04-27
+modified: 2023-04-29
 ---
 
 ## 제이쿼리 get 구현 필요성

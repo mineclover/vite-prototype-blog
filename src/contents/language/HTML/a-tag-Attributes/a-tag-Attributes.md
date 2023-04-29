@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 date: 2023-03-23
-modified: 2023-04-27
+modified: 2023-04-29
 ---
 
 ## 소개
@@ -74,7 +74,8 @@ a 태그로 작성한 styled-components 에 아래와 같이 넣었는데도 같
         onClick={(e) => {
           e.preventDefault();
           navigate(to);
-        }}
+        }
+}
       >
 ```
 

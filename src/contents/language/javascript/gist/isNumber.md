@@ -1,6 +1,6 @@
 ---
 date: 2023-04-01
-modified: 2023-04-27
+modified: 2023-04-29
 ---
 
 ## isNumber

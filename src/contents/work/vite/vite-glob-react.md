@@ -1,6 +1,6 @@
 ---
 date: 2023-03-13
-modified: 2023-04-27
+modified: 2023-04-29
 ---
 
 ## react 에서 glob 로 뽑은 값 사용하기

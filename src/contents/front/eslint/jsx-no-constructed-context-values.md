@@ -1,6 +1,6 @@
 ---
 date: 2023-03-12
-modified: 2023-04-28
+modified: 2023-04-29
 ---
 
 react-icon 에서 디폴트 값을 설정하는 것을 바로 넣어놨더니 문제가 생겼엇음
@@ -12,11 +12,13 @@ function App() {
       q
       <PersistGate persistor={persistor}>
         <IconContext.Provider
-          value={{
+          value={
+{
             size: '24px',
             color: colors.Black,
             style: { marginTop: '-2px', marginBottom: '-2px' },
-          }}
+          }
+}
         >
           <RouterProvider router={Router} />
         </IconContext.Provider>

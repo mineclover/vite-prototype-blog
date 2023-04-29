@@ -1,7 +1,7 @@
 ---
 sidebar_position: 7
 date: 2023-03-31
-modified: 2023-04-27
+modified: 2023-04-29
 ---
 
 사전 설계 할 수 있는 내용들

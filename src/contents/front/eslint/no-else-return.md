@@ -1,6 +1,6 @@
 ---
 date: 2023-04-01
-modified: 2023-04-27
+modified: 2023-04-29
 ---
 
 `if { } else if { } else { }` 패턴을 쓰지 못하게 하는 규칙

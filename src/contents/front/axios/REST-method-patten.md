@@ -1,6 +1,6 @@
 ---
 date: 2023-04-04
-modified: 2023-04-27
+modified: 2023-04-29
 ---
 
 [요청 Config | Axios Docs](https://axios-http.com/kr/docs/req_config)
