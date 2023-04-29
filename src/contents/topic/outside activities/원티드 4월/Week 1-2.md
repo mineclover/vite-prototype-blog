@@ -25,7 +25,7 @@ modified: 2023-04-29
 ## 18 에 추가된 기능
 
 1. useId
-	 1. uuid 같은 것
+   1. uuid 같은 것
 2. useTransition
 3. useDeferredValue
 4. useSyncExternalStore

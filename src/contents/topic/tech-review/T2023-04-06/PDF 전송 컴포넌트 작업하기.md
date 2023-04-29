@@ -60,7 +60,6 @@ state Root {
 
 ##
 
-
 파일 등록 시
 
 PDFInputBox (입력창) 컴포넌트가 사라지고

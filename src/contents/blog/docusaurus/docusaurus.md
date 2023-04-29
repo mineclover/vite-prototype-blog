@@ -21,6 +21,8 @@ modified: 2023-04-29
 
 > Linter : Lint all files in the vault
 
+중괄호 연속 사용 `{{` 을 조심해야한다
+
 ### vscode 에서
 
 일반 리액트 처럼 사용하면 된다
