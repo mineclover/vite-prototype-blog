@@ -50,7 +50,7 @@ test 로 실행시키고
 
 ## 최적화
 
-![](file/Week%202-2.png)
+![](file/Week-2-2.png)
 
 [Site Unreachable](https://web.dev/code-splitting-suspense/)
 suspense , lazy

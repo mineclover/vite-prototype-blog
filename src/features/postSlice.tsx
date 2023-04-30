@@ -1,8 +1,10 @@
 import type { PayloadAction } from '@reduxjs/toolkit';
 import { createSlice } from '@reduxjs/toolkit';
 import type { RootState } from '@/app/store';
-import { components, markdowns } from '@/router/Router';
+import { components, markdowns, spaceList } from '@/router/Router';
 import { routeMapping, ICategory } from '../utils/mappingUtils';
+
+console.error('수정 필요', spaceList);
 
 const postState = markdowns;
 

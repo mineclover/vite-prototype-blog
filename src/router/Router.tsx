@@ -21,6 +21,9 @@ const markdown: any = import.meta.glob([
   '!../contents/etc/**/*.md',
 ]);
 
+const spaceList: string[] = [];
+const regex = /\s/g;
+
 export interface MappingOrigin {
   origin: string;
   path: string;
@@ -43,7 +46,7 @@ const components = Object.keys(modules).map((component) => {
   const path = componentPathRegexFn(component);
   const splitPath = path.split('/');
   const origin = component.replace(/^\.\.\/contents\//g, '');
-  console.log('🚀 ~ file: Router.tsx:46 ~ components ~ origin:', origin);
+  // console.log('🚀 ~ file: Router.tsx:46 ~ components ~ origin:', origin);
 
   componentsMap.push({
     origin,
@@ -67,8 +70,13 @@ const markdowns = Object.keys(markdown).map((component) => {
     .replace(/\/[0-9]{0,2}-/g, '/')
     .replace(/\/[^/]*.md$/g, '');
 
+  if (regex.test(component)) {
+    console.error('공백이 있습니다.', component);
+    spaceList.push(component);
+  }
+
   const origin = component.replace(/^\.\.\/contents\//g, '');
-  console.log('🚀 ~ file: Router.tsx:70 ~ markdowns ~ origin:', origin);
+  // console.log('🚀 ~ file: Router.tsx:70 ~ markdowns ~ origin:', origin);
 
   const splitPath = path.split('/');
 
@@ -139,7 +147,7 @@ function getChildren(children: any) {
 }
 
 export default router;
-export { componentsMap as components, markdowns, routeMapping };
+export { componentsMap as components, markdowns, routeMapping, spaceList };
 // components : 컴포넌트들
 // markdowns : 마크다운들
 // subjects : 주제들 중복제거 ( 라우팅용 인듯 ) 인덱스 리스트 올릴 때 쓰일듯

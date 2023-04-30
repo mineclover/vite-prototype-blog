@@ -29,4 +29,4 @@ modified: 2023-04-30
   ],
 ```
 
-[타입스크립트에서 필요없는 린트](타입스크립트에서%20필요없는%20린트)
+[Unnecessary-lint-options-in-TS](Unnecessary-lint-options-in-TS.md)

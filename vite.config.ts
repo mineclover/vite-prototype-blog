@@ -9,4 +9,9 @@ export default defineConfig({
   resolve: {
     alias: [{ find: '@', replacement: resolve(__dirname, 'src') }],
   },
+  build: {
+    watch: {
+      buildDelay: 10000,
+    },
+  },
 });
