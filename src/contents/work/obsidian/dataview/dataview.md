@@ -1,7 +1,7 @@
 ---
 sidebar_position: 10
 date: 2023-04-29
-modified: 2023-04-30
+modified: 2023-05-01
 ---
 
 [Dataview in Obsidian: A Beginner's Guide - Obsidian Rocks](https://obsidian.rocks/dataview-in-obsidian-a-beginners-guide/)
@@ -18,9 +18,14 @@ TABLE , LIST , 등을 볼 수 있다
 작성 방법을 볼 수 있는데
 내가 원하는 파일 경로 작성 법도 나온다
 
+### SORT
+
+정렬이 특문 > 숫자 순서여서 숫자가 위로 올라오지 않는점은 아쉽다
+
 ```dataview
-TABLE  file.frontmatter.sidebar_position AS "순서", file.frontmatter.aliases AS "부제목", file.frontmatter.tags AS "태그", file.frontmatter.title AS "대체 제목", file.frontmatter.slug AS 경로
+TABLE  file.frontmatter.sidebar_position AS "순서", file.frontmatter.aliases AS "부제목 aliases", file.frontmatter.tags AS "태그 tags", file.frontmatter.title AS "대체 제목 title", file.frontmatter.slug AS "대체 경로 slug"
 FROM "work/obsidian"
+SORT file.frontmatter.sidebar_position
 ```
 
 ## 파일 데이터 확인용
@@ -34,9 +39,27 @@ FROM "work/obsidian"
 이 컴포넌트 구조는 코드블럭 렌더링을 지원해야 원하느 표시가 나오기 때문에 숨기는 것으로
 [준수 사항 | Docusaurus](https://docusaurus.io/ko/docs/markdown-features/admonitions)
 
-::: note
+:::note
 
 옵시디언 데이터 시각화용 코드
+( 뒤에 / 를 붙여줘야 대상 경로가 더 정확하게 잡힌다 )
+
+````dataviewjs
+function callout(text, type) {
+    const allText = `> [!${type}]\n` + text;
+    const lines = allText.split('\n');
+    return lines.join('\n> ') + '\n'
+}
+
+const query = `
+not done
+path includes ${dv.current().file.name}/
+`;
+
+dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
+````
+
+---
 
 ````dataviewjs
 function callout(text, type) {
@@ -50,9 +73,10 @@ const path = dv.current().file.folder;
 const query = `
 TABLE  file.frontmatter.sidebar_position AS "순서", file.frontmatter.aliases AS "부제목", file.frontmatter.tags AS "태그", file.frontmatter.title AS "대체 제목", file.frontmatter.slug AS 경로
 FROM "${path}"
+SORT file.frontmatter.sidebar_position
 `;
 
-dv.paragraph(callout('```dataview\n' + query + '\n```', 'todo'));
+dv.paragraph(callout('```dataview\n' + query + '\n```', 'INDEX ORDER'));
 ````
 
 :::

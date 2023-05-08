@@ -1,6 +1,6 @@
 ---
 date: 2023-03-24
-modified: 2023-04-30
+modified: 2023-05-03
 ---
 
 블로그 개발 작업은 vite-prototype-blog 에서
@@ -26,19 +26,19 @@ vite-prototype-blog 를 설치한다
 배포 전에 lint all 를 하는 것이 좋다
 단축키를 ctrl + shift + s 로 해두었음
 너무 자주 modified 값이 변동되는 문제가 있다
-all lint 를 할 때 modified가 수정된다
+all lint 를 할 때 modified 가 수정된다
 
 > Linter : Lint all files in the vault
 
 중괄호 연속 사용을 조심해야한다 중괄호로 감싸도 코드블럭으로 감싸도 안되서 난감한 문제인데
 그냥 무시하고 배포해도 되긴 한다
-배포할 떄 굳이 bocs가 없어도 된다고 판단해서 폴더를 없애기로 했다
+배포할 떄 굳이 bocs 가 없어도 된다고 판단해서 폴더를 없애기로 했다
 
 ### vscode 에서
 
 일반 리액트 처럼 사용하면 된다
 
-::: note
+:::note
 
 옵시디언 데이터 시각화용 코드
 

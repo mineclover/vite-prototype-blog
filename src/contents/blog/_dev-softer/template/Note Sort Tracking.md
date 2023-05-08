@@ -1,4 +1,4 @@
-::: note
+:::note
 
 옵시디언 데이터 시각화용 코드
 
@@ -11,7 +11,7 @@ function callout(text, type) {
 
 const query = `
 not done
-path includes ${dv.current().file.name}
+path includes ${dv.current().file.name}/
 `;
 
 dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));

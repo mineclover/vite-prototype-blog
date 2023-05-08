@@ -1,11 +1,11 @@
 ---
 sidebar_position: 1
 date: 2023-04-24
-modified: 2023-04-30
+modified: 2023-05-03
 ---
 
 설치에 대해 소개하고자한다 설치는 소개하는대로 한다
-배포에 대해 알고 싶으면 [docusaurus](../docusaurus.md) 를 확인 할 것
+배포에 대해 알고 싶으면 [docusaurus](../docusaurus) 를 확인 할 것
 
 [개요 | Docusaurus](https://docusaurus.io/ko/docs)
 

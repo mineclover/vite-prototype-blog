@@ -1,6 +1,6 @@
 ---
 date: 2023-03-03
-modified: 2023-04-30
+modified: 2023-05-03
 Project: P:\Dev\react-playground
 ---
 
@@ -15,17 +15,17 @@ function callout(text, type) {
 
 const query = `
 not done
-path includes ${dv.current().file.name}
+path includes ${dv.current().file.name}/
 `;
 
 dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ````
 
-포커스 해야할 폴더 > [contents](../../../contents)
+[project](../../../project/project)
 
 아직 안한 것
 
-- [ ] [문서 포멧 기반 자동 처리](https://github.com/mineclover/MDN-to-Markdown-for-obsidian) , [Site Unreachable](https://github.com/mineclover/ObsidianMarkdown-to-docusaurus)
+- [ ] [문서 포멧 기반 자동 처리](https://github.com/mineclover/MDN-to-Markdown-for-obsidian) , [도큐사우르스용](https://github.com/mineclover/ObsidianMarkdown-to-docusaurus)
 - [ ] 리액트 문서 기반 공부
 - [ ] 블로그 제작
 
@@ -65,5 +65,15 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - [2023-04-28](./2023-04-28.md)
 - [2023-04-29](./2023-04-29.md)
 - [2023-04-30](./2023-04-30.md)
+- [2023-05-01](./2023-05-01.md)
+- [2023-05-02](./2023-05-02.md)
+- [2023-05-03](./2023-05-03.md)
+- [2023-05-04](./2023-05-04.md)
+- [2023-05-05](./2023-05-05.md)
+- [2023-05-06](./2023-05-06.md)
+- [2023-05-07](./2023-05-07.md)
+- **file**
+  - [2023-05-01.png](./file/2023-05-01.png)
+  - [2023-05-04.png](./file/2023-05-04.png)
 
 %% End Waypoint %%

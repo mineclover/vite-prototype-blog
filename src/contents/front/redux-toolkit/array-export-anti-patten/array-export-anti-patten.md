@@ -1,14 +1,15 @@
 ---
 sidebar_position: 1
 date: 2023-03-14
-modified: 2023-04-30
+modified: 2023-05-01
 ---
+
+타입 추론 안되는 안티패턴 소개
+TypeScript 4.9.5
 
 ## 소개
 
-안티패턴 소개
-음... 기능은 잘되는데 왜 안티패턴이냐.... 음....
-추론이 안되잖아 어딘가에 소실되는 영역이 있어서 그런거 아닐까?? 라는 의견
+음... 기능은 잘되는데 왜 안티패턴이냐...
 일단 Default 여서 참조형으로 변하면서 안되는 것 같음
 
 ```tsx
@@ -79,16 +80,12 @@ export default markdownSlice.reducer;
 그래서
 `export authSlice.reducer` 를 해야하는 상황이여서... 어떻게 하나 시도를 해봤다
 
-slice.tsx
-
-```tsx
+```tsx slice.tsx
 export const markdownReducer = markdownSlice.reducer;
 export const componentsReducer = componentsSlice.reducer;
 ```
 
-store.tsx
-
-```
+```tsx store.tsx
 import { markdownReducer, componentsReducer } from '@/features/postSlice';
 ```
 
@@ -100,6 +97,8 @@ import { markdownReducer, componentsReducer } from '@/features/postSlice';
 ![](file/01-array-export-anti-patten.png)
 
 ## 변경 후 코드
+
+각각 export 하고 import 시켜야 타입 추론이 된다
 
 ```tsx
 import type { PayloadAction } from '@reduxjs/toolkit';
@@ -149,4 +148,8 @@ export const order = ['front', 'back', 'work', 'language', 'blog'];
 
 export const markdownReducer = markdownSlice.reducer;
 export const componentsReducer = componentsSlice.reducer;
+```
+
+```tsx store.tsx
+import { markdownReducer, componentsReducer } from '@/features/postSlice';
 ```

@@ -1,8 +1,13 @@
+---
+date: 2023-04-30
+modified: 2023-05-03
+---
+
 vite 번들러를 사용해서 next 같은 app directory 를 구현하고
 그 곳에 마크다운과 제작이 완료된 작업물을 같이 업로드 하고 관리하기 위해 시도한 프로젝트
 [React dev](https://react.dev/) 사이트와 목적이 유사하다
 
-[docusaurus](../../blog/docusaurus/docusaurus.md) , blog폴더 에서 기획 과정에 작성한 문서를 볼 수 있다
+[docusaurus](../../blog/docusaurus/docusaurus) , blog 폴더 에서 기획 과정에 작성한 문서를 볼 수 있다
 
 메모 작성환경과 , 실제 실행되는 코드 , 실행 결과가 나오는 환경을 유기적으로 연결하고 싶었다
 아는 거 최대한 쥐어짜서 만들어본 것

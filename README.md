@@ -1,16 +1,28 @@
 # 사용 전 체크
 
+deploy 먼저하고 pull 하는 것을 권장함
+mdx 와 md 를 같이 쓰는 이슈로 첫 문장이 코드인 것처럼 보이는 md파일에 에러가 발생
+그렇게 되면 md를 수정해야해서 찜찜해진다
+
 ## 세팅
+
+`npm run setup` : 필요한 하위 모듈 설치
+`npm run sync` : 전체 레포 npm i로 종속성 설치
+`npm run deploy` : 상위 contents 에서 필요한 것만 docusurus 로 macro를 통해 복사 후 배포
+
+최상위 레포는 push 하면 연결된 네트리파이를 통해 배포
+파일이름에 공백이 있을 경우 github blog로 가는 링크가 작동하지 않으니 주의
 
 ### 편집 방법
 
 .obsidian을 가져와서 쓰는 것을 권장함
-기본적으로 해당 파일을 무시하고 있고 옵시디언으로 관리되는 리소스인
-contents 폴더에 넣으면 됨
+기본적으로 해당 파일을 무시하고 있음
+옵시디언으로 관리되는 리소스인
+contents 폴더를 vault로 선택하거나 사용중인 세팅파일을 넣고 선택
 
 ### 종속성
 
-일단 블로그 두개를 쓰고 있고 a와 b를 왕래한다
+일단 블로그 두개를 쓰고 있고 react playground와 github blog를 왕래한다
 그래서
 
 프리뷰 블로그를 배포하는 최상위 폴더가 있고
@@ -22,7 +34,7 @@ contents 폴더에 넣으면 됨
 
 피그마 체크 할 것 : [피그마](https://www.figma.com/file/JTgfhaiAm9mWAqbmChCEYo/react-playground?node-id=0%3A1&t=oczIrWhWazX5AhPN-1)
 
-[배포 프리뷰](https://zippy-lamington-f8a667.netlify.app/)
+[배포 프리뷰](https://dev-softer.netlify.app/)
 
 # 폴더 네이밍
 

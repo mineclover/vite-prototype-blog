@@ -1,6 +1,6 @@
 ---
 date: 2023-04-25
-modified: 2023-04-30
+modified: 2023-05-05
 ---
 
 ## 사이트 모니터링
@@ -24,3 +24,10 @@ modified: 2023-04-30
 실제 돌아가는 코드를 보여준다
 개발자 도구가 브라우저 안에서 보이는게 포인트
 [browserless debugger](https://chrome.browserless.io/)
+
+## Grasshopper
+
+검색하면 이상한거 나온다 (나온지 얼마 안됨)
+파이썬 기반
+[GitHub - alteryx/locust-grasshopper at innovation.alteryx.com](https://github.com/alteryx/locust-grasshopper?ref=innovation.alteryx.com)
+[Grasshopper - 로드테스팅을 위한 오픈소스 파이썬 라이브러리 | GeekNews](https://news.hada.io/topic?id=9115&utm_source=slack&utm_medium=bot&utm_campaign=T0439Q8HNHG)

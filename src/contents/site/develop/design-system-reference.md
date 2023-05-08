@@ -1,7 +1,7 @@
 ---
 title: 디자인 시스템 구축 레퍼런스
 date: 2023-04-06
-modified: 2023-04-30
+modified: 2023-05-03
 tags: [레퍼런스]
 ---
 
@@ -11,4 +11,4 @@ tags: [레퍼런스]
 
 [Components - Gmarket Design System](https://gds.gmarket.co.kr/components)
 [LINE Design System](https://designsystem.line.me/)
-[design](../design/design.md) 에 있는 디자이너스도 좋다
+[design](../design/design) 에 있는 디자이너스도 좋다

@@ -1,6 +1,6 @@
 ---
 date: 2023-03-09
-modified: 2023-04-30
+modified: 2023-05-05
 ---
 
 흠 .. 다른 사람이 초기 세팅을 햇는데 에어비엔비 설치만 하고 적용을 안해둠
@@ -13,6 +13,8 @@ modified: 2023-04-30
 ### 설치해야하는 라이브러리가 좀 많다
 
 #### 허스키 세팅
+
+git 설치가 되있어야한다
 
 [husky, lint-staged를 사용하자( sub : ESLint 자동화하기 )](https://velog.io/@do_dadu/husky-lint-staged%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EC%9E%90-sub-ESLint-%EC%9E%90%EB%8F%99%ED%99%94%ED%95%98%EA%B8%B0)
 
@@ -49,6 +51,8 @@ npx mrm package gitignore eslint prettier lint-staged
 ```shell
 npx eslint --init
 ```
+
+[env-vite React 세팅 방법 정리](../../work/vite/915%20VIte%20번들러/env-vite%20React%20세팅%20방법%20정리) (이전 정리 파일)
 
 [CRA에 ESLint 와 Prettier 적용하기](https://velog.io/@sonic/CRA%EC%97%90-ESLint-%EC%99%80-Prettier-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0)
 린트가 다양한 상황들에 규칙들을 정하는 건데
@@ -89,6 +93,9 @@ npm i -D eslint-config-prettier eslint-plugin-prettier eslint-config-airbnb esli
 ```
 
 ##### 자주 쓰는 rules
+
+npx eslint init 후 이 작업은 거의 필수
+아래코드는 에어비엔비까지 썻을 때의 코드임으로 몃가지만 가져와서 쓰는 것이 좋다
 
 ```json
 "rules": {

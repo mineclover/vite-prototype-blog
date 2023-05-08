@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3.1
 date: 2023-03-24
-modified: 2023-04-30
+modified: 2023-05-03
 ---
 
 ## 세팅하기

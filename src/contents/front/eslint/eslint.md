@@ -1,6 +1,6 @@
 ---
 date: 2023-03-09
-modified: 2023-04-30
+modified: 2023-05-05
 ---
 
 ---
@@ -29,4 +29,4 @@ modified: 2023-04-30
   ],
 ```
 
-[Unnecessary-lint-options-in-TS](Unnecessary-lint-options-in-TS.md)
+[TS에서 필요없는](Unnecessary-lint-options-in-TS)
