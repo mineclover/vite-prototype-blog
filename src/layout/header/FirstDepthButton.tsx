@@ -1,8 +1,7 @@
-import { useState } from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { MaxWidthStyle, Pretendard, Jamsil } from '@/global/styleUtils';
+import { Jamsil } from '@/global/styleUtils';
 import colors from '@/global/colors';
 
 interface Props {

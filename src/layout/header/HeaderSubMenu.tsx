@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { BiChevronRight } from 'react-icons/bi';
-import { useEffect } from 'react';
 import SubMenuText from '@/layout/header/SubMenuText';
 import { useAppSelector } from '@/app/hooks';
 import { selectAll } from '@/features/postSlice';

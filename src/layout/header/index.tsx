@@ -1,16 +1,12 @@
 import { Outlet } from 'react-router-dom';
 import styled from 'styled-components';
-import { BiUserCircle } from 'react-icons/bi';
-import colors from '@/global/colors';
 import FirstDepthLink from '@/layout/header/FirstDepthButton';
 import Logo, { SideLogoBox } from '@/layout/Logo';
 import HeaderSubMenu from '@/layout/header/HeaderSubMenu';
-import { useAppSelector } from '@/app/hooks';
-import { order } from '@/features/postSlice';
 import LearnBar from '@/layout/learn';
 import BlogGithub from '@/components/badge/BlogGithub';
 
-import { MaxWidthStyle, Pretendard, Jamsil } from '../../global/styleUtils';
+import { MaxWidthStyle } from '../../global/styleUtils';
 
 const App = () => {
   return (

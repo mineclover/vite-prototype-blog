@@ -2,8 +2,13 @@
 
 deploy 먼저하고 pull 하는 것을 권장함
 mdx 와 md 를 같이 쓰는 이슈로 첫 문장이 코드인 것처럼 보이는 md파일에 에러가 발생
-그렇게 되면 md를 수정해야해서 찜찜해진다
-docusaurus 파일 없애야 한다
+md를 수정해야해서 찜찜해진다
+
+## 구조
+
+폴더 라우팅 + react-router 를 섞어서 쓰고 있다
+현재 dev 에서만 동작하고 빌드 시간 초과 오류가 발생하는 문제로
+router에서 markdown의 router를 뺀 상태
 
 ## 세팅
 
@@ -23,15 +28,13 @@ contents 폴더를 vault로 선택하거나 사용중인 세팅파일을 넣고 
 
 ### 종속성
 
-일단 블로그 두개를 쓰고 있고 react playground와 github blog를 왕래한다
-그래서
+일단 블로그 두개를 쓰고 있고 react playground와 github blog가 있다
 
 프리뷰 블로그를 배포하는 최상위 폴더가 있고
-같은 폴더 구조를 가지는 정적 블로그인 docusaurus 블로그를
-배포 시키는 docusaurus 를 안에 넣어두고 있고
-그 안에는 프리뷰 블로그에서 필요한 것만 뽑는 객체가 따로 있음
+같은 폴더 구조를 가지는 정적 블로그인 docusaurus 블로그를 배포 시키는 docusaurus 가 있고
+파일을 도큐사우르스로 옮겨주고 markdown 매핑해주는 macro가 있다
 
-실질적으로 편집하는 파일이 하나기 때문에 분리해서 배포하는 작업을 넣었다
+실질적으로 편집하는 폴더는 contents이 하나기 때문에 분리해서 배포하는 작업을 넣었다
 
 피그마 체크 할 것 : [피그마](https://www.figma.com/file/JTgfhaiAm9mWAqbmChCEYo/react-playground?node-id=0%3A1&t=oczIrWhWazX5AhPN-1)
 

@@ -68,7 +68,7 @@ const markdowns = markdown.map((component) => {
     .replace(/\/[^/]*.md$/g, '');
 
   if (regex.test(component)) {
-    console.error('공백이 있습니다.', component);
+    console.log('공백이 있습니다.', component);
     spaceList.push(component);
   }
 
@@ -105,24 +105,6 @@ const router = createBrowserRouter(
       <Route path="learn" element="">
         {components.map(({ path, component: Component }) => {
           return <Route key={path} path={path} element={<Component />} />;
-        })}
-        {Object.keys(routeMapping).map((aItem) => {
-          // front , back , etc
-          return (
-            <Route key={aItem} path={aItem} element={<LearnIndex />}>
-              {Object.keys(routeMapping[aItem]).map((bItem) => {
-                // react, node, etc
-
-                return (
-                  <Route
-                    key={bItem}
-                    path={bItem}
-                    element={<Navigate to={`learn/${aItem}`} replace />}
-                  />
-                );
-              })}
-            </Route>
-          );
         })}
         <Route path="*" element={<Navigate to="/404" replace />} />
       </Route>

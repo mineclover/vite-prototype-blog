@@ -1,10 +1,8 @@
 import styled from 'styled-components';
 import colors from '@/global/colors';
-import { Pretendard, Jamsil } from '@/global/styleUtils';
+import { Jamsil } from '@/global/styleUtils';
 
-interface Props {}
-
-const index = (props: Props) => {
+const index = () => {
   return (
     <BackgroundRoot>
       <Jamsil>border radius</Jamsil>

@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { BiChevronRight, BiBookOpen } from 'react-icons/bi';
 import colors from '../../global/colors';
-import { Pretendard, Jamsil } from '../../global/styleUtils';
+import { Jamsil } from '../../global/styleUtils';
 
 interface Props {
   children: string;

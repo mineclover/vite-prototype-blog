@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import urlGet from '@/utils/urlGet';
 
-type Props = {};
-
-const index = (props: Props) => {
+const index = () => {
   const [value, setValue] = useState('');
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();

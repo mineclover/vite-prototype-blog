@@ -2,8 +2,8 @@ import { ReactNode, useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { useAppSelector } from '@/app/hooks';
 import { componentState, markdownState } from '@/features/postSlice';
-import { Pretendard, Jamsil, MaxWidthStyle } from '@/global/styleUtils';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Pretendard, MaxWidthStyle } from '@/global/styleUtils';
+import { useLocation, useNavigate } from 'react-router-dom';
 import colors from '@/global/colors';
 import _ from 'lodash';
 import {

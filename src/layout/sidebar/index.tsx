@@ -2,9 +2,7 @@ import styled from 'styled-components';
 import { BiChevronLeft } from 'react-icons/bi';
 import colors from '@/global/colors';
 
-interface Props {}
-
-const index = (props: Props) => {
+const index = () => {
   return (
     <SidebarRoot>
       <SidebarSwitch>

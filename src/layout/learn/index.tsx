@@ -1,9 +1,7 @@
-import { Outlet, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import { BiLink } from 'react-icons/bi';
-import { MaxWidthStyle, Pretendard, Jamsil } from '@/global/styleUtils';
-import colors from '@/global/colors';
-import { useEffect } from 'react';
+import { MaxWidthStyle, Pretendard } from '@/global/styleUtils';
 import LinkBook from './LabelLink';
 import CopyButton from './CopyButton';
 import Sidebar from '../sidebar';

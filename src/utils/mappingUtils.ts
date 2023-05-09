@@ -12,11 +12,18 @@ export interface IRouteMapping {
   origin: string;
 }
 
-export const routeMapping = (
+type RouterMapping = (
   routeMapping: ICategory,
   category: string,
   subject: string,
   origin: string
+) => void;
+
+export const routeMapping: RouterMapping = (
+  routeMapping,
+  category,
+  subject,
+  origin
 ) => {
   if (routeMapping[category] === undefined) routeMapping[category] = {};
   if (routeMapping[category][subject] === undefined)

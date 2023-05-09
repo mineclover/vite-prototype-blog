@@ -1,12 +1,9 @@
-import LinkComp from '@/global/iconBlankButton';
 import { VscGithub } from 'react-icons/vsc';
 import styled from 'styled-components';
 import { Jamsil } from '@/global/styleUtils';
 import colors from '@/global/colors';
 
-type Props = {};
-
-const BlogGithub = (props: Props) => {
+const BlogGithub = () => {
   return (
     <Button
       href="https://github.com/mineclover/vite-prototype-blog"
