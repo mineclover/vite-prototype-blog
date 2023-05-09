@@ -21,5 +21,6 @@
     }
   },
   "include": ["src"],
+  "exclude": ["src/**/*.md"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

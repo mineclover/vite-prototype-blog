@@ -1,7 +1,7 @@
 ---
 sidebar_position: 6
 date: 2023-04-26
-modified: 2023-04-30
+modified: 2023-05-08
 ---
 
 ## 경로 문제 해결

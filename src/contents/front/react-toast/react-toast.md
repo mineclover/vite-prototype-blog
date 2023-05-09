@@ -1,7 +1,6 @@
 ---
-sidebar_position: 1
-date: 2023-04-04
-modified: 2023-04-30
+date: 2023-05-09
+modified: 2023-05-09
 ---
 
 [React-toastify | React-Toastify](https://fkhadra.github.io/react-toastify/introduction)

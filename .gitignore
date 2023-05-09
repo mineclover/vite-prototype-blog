@@ -1,6 +1,6 @@
 .obsidian
 ./docusaurus
-
+macro
 # Logs
 logs
 *.log
