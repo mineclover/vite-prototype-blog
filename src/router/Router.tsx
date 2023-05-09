@@ -12,14 +12,11 @@ import Root from '../pages/Root';
 import Dashboard from '../pages/Dashboard';
 import NotFound from '../pages/NotFound';
 import IndexPage from '../pages/IndexPage';
+import markdown from './router.json';
 
 const modules: any = import.meta.glob('../contents/**/*.tsx', { eager: true });
-const markdown: any = import.meta.glob([
-  '../contents/**/*.md',
-  '!../contents/contents.md',
-  '!../contents/blog/**/*.md',
-  '!../contents/etc/**/*.md',
-]);
+
+console.log('🚀 ~ file: Router.tsx:14 ~ markdown', markdown);
 
 const spaceList: string[] = [];
 const regex = /\s/g;
@@ -64,7 +61,7 @@ const components = Object.keys(modules).map((component) => {
   };
 });
 
-const markdowns = Object.keys(markdown).map((component) => {
+const markdowns = markdown.map((component) => {
   const path = component
     .replace(/^\.\.\/contents\//g, '')
     .replace(/\/[0-9]{0,2}-/g, '/')

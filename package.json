@@ -15,7 +15,7 @@
     "prepare": "husky install",
     "test": " npm run macro && npm run build --prefix ./docusaurus ",
     "deploy": "npm run macro  && npm run dd --prefix ./docusaurus",
-    "macro": "npm start --prefix ./macro && npm run sync --prefix ./macro",
+    "macro": "npm start --prefix ./macro",
     "sync": "git pull &npm run sync --prefix ./docusaurus & npm i && npm i && npm run sync --prefix ./macro",
     "setup": "git clone https://github.com/mineclover/my-blog.git docusaurus && npm install --prefix ./docusaurus && npm run setup --prefix docusaurus && git clone https://github.com/mineclover/ObsidianMarkdown-to-docusaurus.git macro && npm install --prefix ./macro",
     "upload": "git add . && git commit -m \"변경 사항 일괄 저장\" && git push upstream main && npm run upload --prefix ./docusaurus && npm run upload --prefix ./macro"
