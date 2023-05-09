@@ -106,6 +106,24 @@ const router = createBrowserRouter(
         {components.map(({ path, component: Component }) => {
           return <Route key={path} path={path} element={<Component />} />;
         })}
+        {Object.keys(routeMapping).map((aItem) => {
+          // front , back , etc
+          return (
+            <Route key={aItem} path={aItem} element={<LearnIndex />}>
+              {Object.keys(routeMapping[aItem]).map((bItem) => {
+                // react, node, etc
+
+                return (
+                  <Route
+                    key={bItem}
+                    path={bItem}
+                    element={<Navigate to={`learn/${aItem}`} replace />}
+                  />
+                );
+              })}
+            </Route>
+          );
+        })}
         <Route path="*" element={<Navigate to="/404" replace />} />
       </Route>
       <Route path="dashboard/:moc" element={<Dashboard />} />
