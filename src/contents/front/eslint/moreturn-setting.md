@@ -1,9 +1,9 @@
 ---
 date: 2023-03-09
-modified: 2023-05-05
+modified: 2023-05-14
 ---
 
-흠 .. 다른 사람이 초기 세팅을 햇는데 에어비엔비 설치만 하고 적용을 안해둠
+흠 .. 다른 사람이 초기 세팅을 햇는데 에어비엔비 설치만 하고 적용을 안해둠  
 프리티어도 안했고 그래서 세팅 넣었더니 문제가 많았음
 
 허스키를 설치해서 린트 전체 검사 자동화를 하고 봣더니 문제가 많다
@@ -34,8 +34,8 @@ npx mrm package editorconfig gitignore eslint prettier lint-staged
 
 ##### 패키지 업데이트 안되는 버그 발생 시
 
-허스키, 린트, 린트스테이지 등이 설치 안될 때
-린트 세팅을 먼저한다
+허스키, 린트, 린트스테이지 등이 설치 안될 때  
+린트 세팅을 먼저한다  
 프리티어를 미리 설치했으면 , 이 방식으로 해야하는 것 같다
 
 ```
@@ -54,14 +54,14 @@ npx eslint --init
 
 [env-vite React 세팅 방법 정리](../../work/vite/915%20VIte%20번들러/env-vite%20React%20세팅%20방법%20정리) (이전 정리 파일)
 
-[CRA에 ESLint 와 Prettier 적용하기](https://velog.io/@sonic/CRA%EC%97%90-ESLint-%EC%99%80-Prettier-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0)
-린트가 다양한 상황들에 규칙들을 정하는 건데
-라이브러리의 규모가 좀 크기 때문에
+[CRA에 ESLint 와 Prettier 적용하기](https://velog.io/@sonic/CRA%EC%97%90-ESLint-%EC%99%80-Prettier-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0)  
+린트가 다양한 상황들에 규칙들을 정하는 건데  
+라이브러리의 규모가 좀 크기 때문에  
 일단 Default 로 설정하고 , 아는 세팅을 추가해나가는 방식이 좋다
 
-설명에 잘 나와있고, 설정이 필요 없는 경우가 잘 나와있다
-extends 에 :recommended 붙이는 건 스텐다드 세팅을 하는 것으로
-해당 문구가 붙은 이름은 관련된 세팅이 아래의 plugins, rules 에 적용되는 효과를 가지고 있다
+설명에 잘 나와있고, 설정이 필요 없는 경우가 잘 나와있다  
+extends 에 :recommended 붙이는 건 스텐다드 세팅을 하는 것으로  
+해당 문구가 붙은 이름은 관련된 세팅이 아래의 plugins, rules 에 적용되는 효과를 가지고 있다  
 ( 해당 내용들도 공식 문서에 잘 작성되어 있음 )
 
 ```
@@ -94,7 +94,7 @@ npm i -D eslint-config-prettier eslint-plugin-prettier eslint-config-airbnb esli
 
 ##### 자주 쓰는 rules
 
-npx eslint init 후 이 작업은 거의 필수
+npx eslint init 후 이 작업은 거의 필수  
 아래코드는 에어비엔비까지 썻을 때의 코드임으로 몃가지만 가져와서 쓰는 것이 좋다
 
 ```json
@@ -127,7 +127,7 @@ npx eslint init 후 이 작업은 거의 필수
 
 [eslint-plugin-react/jsx-filename-extension](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension)
 
-no-unexpected-multiline 에 대한 오류와 관련된 eslint-semi 도 보면 좋다
+no-unexpected-multiline 에 대한 오류와 관련된 eslint-semi 도 보면 좋다  
 [semi - ESLint - Pluggable JavaScript Linter](https://eslint.org/docs/latest/rules/semi)
 
 ##### eslint-import 에 기능이 은근 많았다

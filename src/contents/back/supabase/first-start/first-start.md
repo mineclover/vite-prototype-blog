@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 date: 2023-04-30
-modified: 2023-05-01
+modified: 2023-05-14
 ---
 
 설정을 위해 테이블을 만들었다
@@ -36,6 +36,6 @@ SQL 조작 명령어를 저장하거나 실행할 수 있도록 하는 인터페
 
 [PostgreSQL Tutorial – Comprehensive Postgresql Tutorial](https://www.postgresqltutorial.com/)
 
-[Row Level Security | Supabase Docs](https://supabase.com/docs/guides/auth/row-level-security)
-한국어 공식문서
+[Row Level Security | Supabase Docs](https://supabase.com/docs/guides/auth/row-level-security)  
+한국어 공식문서  
 [supabase/README.ko.md at master · supabase/supabase · GitHub](https://github.com/supabase/supabase/blob/master/i18n/README.ko)

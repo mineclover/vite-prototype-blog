@@ -1,10 +1,10 @@
 ---
 date: 2023-05-01
-modified: 2023-05-01
+modified: 2023-05-14
 ---
 
-깃허브 백로그 생성, 프로젝트 생성 등 여러 작업을 수행할 때
-템플릿은 복사가 되더라도 ( 저장소 기반으로 .github 폴더에 추가됨 )
+깃허브 백로그 생성, 프로젝트 생성 등 여러 작업을 수행할 때  
+템플릿은 복사가 되더라도 ( 저장소 기반으로 .github 폴더에 추가됨 )  
 label 이 복사가 안된다는 것을 알 수 있을 것이다
 
 ## 복사 방법
@@ -25,7 +25,7 @@ label 이 복사가 안된다는 것을 알 수 있을 것이다
     - `Btn-link` > `.Button--danger.Button--small.Button`
   - 삭제를 미리하고 하면 깔끔하다 > 아래 코드는 삭제 생략한 코드
 
-나는 템플릿을 아래같이 만들어둿다
+나는 템플릿을 아래같이 만들어둿다  
 [GitHub - mineclover/git-Template: 이슈 , 마일스톤 , 프로젝트 , 위키](https://github.com/mineclover/git-Template)
 
 ## 삭제 생략한 import-github-labels.js

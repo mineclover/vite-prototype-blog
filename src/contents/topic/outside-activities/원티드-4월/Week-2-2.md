@@ -1,6 +1,6 @@
 ---
 date: 2023-04-13
-modified: 2023-04-30
+modified: 2023-05-14
 ---
 
 ## Week 2-2
@@ -22,14 +22,14 @@ profile 녹화 키고 동작 (행동) 하고 녹화 종료
 
 ## 테스트
 
-react testing library 랑 jest 두개 같이 쓰는게 좋다
-test 로 실행시키고
+react testing library 랑 jest 두개 같이 쓰는게 좋다  
+test 로 실행시키고  
 렌더링 트리거 붙이고 , 리액트 컴포넌트 선택시키고?
 
 ## 취업 제안 받는 방법
 
-[프론트엔드 역사와 미래, 업무 분야 ... 그리고 잘하는 프론트엔드 개발자란?](https://velog.io/@teo/frontend)
-꾸준히 업데이트 하기
+[프론트엔드 역사와 미래, 업무 분야 ... 그리고 잘하는 프론트엔드 개발자란?](https://velog.io/@teo/frontend)  
+꾸준히 업데이트 하기  
 제안서 작성하기
 
 유리프트 : 대표가 짱짱한 회사?
@@ -40,8 +40,8 @@ test 로 실행시키고
 
 ### 투자사
 
-본엔젤스
-스마일게이트
+본엔젤스  
+스마일게이트  
 팁엔스
 
 ## 서버 사이드 렌더링
@@ -52,8 +52,8 @@ test 로 실행시키고
 
 ![](file/Week-2-2.png)
 
-[Site Unreachable](https://web.dev/code-splitting-suspense/)
-suspense , lazy
+[Site Unreachable](https://web.dev/code-splitting-suspense/)  
+suspense , lazy  
 web.dev
 
 ## 오늘의집 3D

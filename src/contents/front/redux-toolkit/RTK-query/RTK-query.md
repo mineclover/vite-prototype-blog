@@ -1,13 +1,13 @@
 ---
 date: 2023-05-01
-modified: 2023-05-03
+modified: 2023-05-14
 ---
 
 생각보다 복잡해서 자료를 한참 찾았다
 
 [RTK Query Overview | Redux Toolkit](https://redux-toolkit.js.org/rtk-query/overview)
 
-유튜브에서 찾는게 좀 더 나았다
+유튜브에서 찾는게 좀 더 나았다  
 [React 서버 통신에 회의가 든다면 - RTK Query - YouTube](https://www.youtube.com/watch?v=pnpO3o8mLBU&t=1517s)
 
 ## 눈에 띄는 장점

@@ -1,6 +1,6 @@
 ---
 date: 2023-03-10
-modified: 2023-05-03
+modified: 2023-05-14
 ---
 
 ## 소개
@@ -9,6 +9,6 @@ modified: 2023-05-03
 
 [Sticky Navigation Bar On Scroll Using Vanilla Javascript | Fixed Navbar on Scroll - YouTube](https://www.youtube.com/watch?v=6HFpw5fcaD8)
 
-지역 선택할 때
-위피에서 가입할 때
+지역 선택할 때  
+위피에서 가입할 때  
 도시 드래그하면 군구 불러오는 거 자동으로 달라지는 게 신기했다

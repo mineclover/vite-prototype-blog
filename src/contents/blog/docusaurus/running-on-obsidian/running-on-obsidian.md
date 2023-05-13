@@ -5,7 +5,7 @@ description: My document description
 slug: /my-custom-url
 sidebar_position: 2
 date: 2023-04-27
-modified: 2023-04-30
+modified: 2023-05-14
 ---
 
 ## 작성 요령
@@ -22,10 +22,10 @@ modified: 2023-04-30
 
 ### 하이라이팅
 
-`// highlight-next-line`
+`// highlight-next-line`  
 을 써서 보이는 코드 상에서 하이라이트를 줄 수 있다
 
-`// highlight-start ~ // highlight-End`
+`// highlight-start ~ // highlight-End`  
 를 써서 영역에 하이라이트를 줄 수 있다
 
 ### 예약된 이름
@@ -45,24 +45,24 @@ slug: /my-custom-url
 
 - [ ] 콜아웃 호환
 
-공식 콜아웃 스타일이다
-나는 이 기능을
+공식 콜아웃 스타일이다  
+나는 이 기능을  
 [GitHub - javalent/admonitions: Adds admonition block-styled content to Obsidian.md](https://github.com/javalent/admonitions) 처럼 구현하고자 한다
 
-:::tip My tip
-Use this awesome feature option
+:::tip My tip  
+Use this awesome feature option  
 :::
 
-:::danger Take care
-This action is dangerous
+:::danger Take care  
+This action is dangerous  
 :::
 
-:::tip My tip
-Use this awesome feature option
+:::tip My tip  
+Use this awesome feature option  
 :::
 
-:::danger Take care
-This action is dangerous
+:::danger Take care  
+This action is dangerous  
 :::
 
 ## 전체

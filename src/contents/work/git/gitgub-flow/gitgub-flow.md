@@ -1,23 +1,23 @@
 ---
 date: 2023-03-31
-modified: 2023-04-30
+modified: 2023-05-14
 ---
 
 ## Issuses Convention
 
-작성 시 Assignees 본인으로 설정
-라벨 Priority , Status , Tpye , Category 붙이기
+작성 시 Assignees 본인으로 설정  
+라벨 Priority , Status , Tpye , Category 붙이기  
 작업 현황 체크 ( 작업 내역이라 하면 몰아서 쓰게 되니 " 작업 현황 " 으로 )
 
 ## Pull request Convention
 
-> 풀리퀘스트에서 `feature/~` -> `main` 업로드 후 이슈 템플릿에 맞춰서 작성
-> 작성 시 Assignees 본인으로 설정
+> 풀리퀘스트에서 `feature/~` -> `main` 업로드 후 이슈 템플릿에 맞춰서 작성  
+> 작성 시 Assignees 본인으로 설정  
 > 라벨 Priority , Status , Tpye , Category 붙이기
 
 ## commit prefix
 
-> 커밋 시 prefix
+> 커밋 시 prefix  
 > PR 은 해당 사항 없음!
 
 - Feat : 새로운 기능 추가
@@ -35,14 +35,14 @@ modified: 2023-04-30
 
 ### github flow
 
-등록된 이슈 단위로 feature/~ 생성 띄어쓰기는 `-` 로 처리
+등록된 이슈 단위로 feature/~ 생성 띄어쓰기는 `-` 로 처리  
 기능 개발 단위로 commit prefix 작성
 
 ### push 전
 
 `git pull origin main`
 
-> 충돌 발생 시 병합 > Commit log 에서 Merge:~ 앞에 conflict 표시
+> 충돌 발생 시 병합 > Commit log 에서 Merge:~ 앞에 conflict 표시  
 > 글자 수 제한 발생 시 cmd vim 또는 , 머지된 main commit 의 중요 메세지 ( 이슈번호, 커밋 메세지 ) 는 살려서 작성할 것
 
 `git push origin feature/~`
@@ -51,7 +51,7 @@ modified: 2023-04-30
 
 #### 저장소에 remote repo 의 병합 된 main 브런치 상태 반영
 
-`git pull origin main`
+`git pull origin main`  
 `git fetch --prune`
 
 #### 로컬 브런치 삭제

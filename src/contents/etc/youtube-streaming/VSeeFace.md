@@ -1,9 +1,9 @@
 ---
 date: 2023-04-06
-modified: 2023-04-30
+modified: 2023-05-14
 ---
 
-[VSeeFace](https://www.vseeface.icu/)
+[VSeeFace](https://www.vseeface.icu/)  
 초기 튜토리얼이 꽤 잘되있다
 
 투명도 설정을 허용하고 커서를 안보이게 한다

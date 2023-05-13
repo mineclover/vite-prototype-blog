@@ -1,7 +1,7 @@
 ---
 sidebar_position: 4
 date: 2023-03-20
-modified: 2023-04-30
+modified: 2023-05-14
 ---
 
 ## 작성한 이유
@@ -39,7 +39,7 @@ const Router = () => {
 
 #### 놀란점
 
-위에 id tset 가 적용이 된다
+위에 id tset 가 적용이 된다  
 생각보다 장점이 많다
 
 단점을 아직 못찾았다
@@ -69,5 +69,5 @@ const router = createBrowserRouter(
 
 #### 단점
 
-div 로 라우터들을 감쌀 수 없다
+div 로 라우터들을 감쌀 수 없다  
 말 그대로 라우터 경로만 선언한단

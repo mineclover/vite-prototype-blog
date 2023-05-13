@@ -1,7 +1,7 @@
 ---
 aliases: 최적화 테스트
 date: 2023-04-30
-modified: 2023-05-02
+modified: 2023-05-14
 ---
 
 :::note

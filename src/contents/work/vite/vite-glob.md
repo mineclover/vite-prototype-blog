@@ -1,6 +1,6 @@
 ---
 date: 2023-03-12
-modified: 2023-04-30
+modified: 2023-05-14
 ---
 
 [리액트에서 폴더 구조대로 라우팅하기 (feat. Vite) | keencho's blog](https://keencho.github.io/posts/react-vite-routing/)
@@ -15,17 +15,17 @@ const modules = import.meta.glob(
 console.log('modules', modules); // 가져오기
 ```
 
-배열로 여러가지를 넣어서 가져오게 하는것도 되긴 하는데
+배열로 여러가지를 넣어서 가져오게 하는것도 되긴 하는데  
 결과값에서 하나의 배열로 오기 때문에 크게 의미는 없다
 
 제외할 옵션을 넣을 수 있다는 것에는 의미가 있는 것 같다
 
-> 이미 위 동작에서 경로의 파일을 import 한 상태라고 볼 수 있다
+> 이미 위 동작에서 경로의 파일을 import 한 상태라고 볼 수 있다  
 > 그래서 파일 이름을 어떻게 바꾸든 크게 상관은 없다 단지 원본의 값이 회손될 뿐임
 
 [지원하는 기능들 | Vite](https://vitejs-kr.github.io/guide/features.html#glob-import)
 
-이 기능을 실행함으로써
+이 기능을 실행함으로써  
 src 에 모듈들을 객체에 임포트한 상태가 된 것임
 
 아래 동작을 수행해서 쓸 때 없는 영역은 날려서 path 로 만들고
@@ -57,8 +57,8 @@ console.log('components', components);
 
 ### object dynamoc property
 
-![](file/vite-glob-1.png)
-를 [] 로 감싸세요 연산쓰려면 [] 감싸야해요
+![](file/vite-glob-1.png)  
+를 [] 로 감싸세요 연산쓰려면 [] 감싸야해요  
 키는 symbol 이랑 string 만 되고 연산쓰려면 [] 감싸야해요
 
 성공한 형태
@@ -72,7 +72,7 @@ setMaps((prevMaps) => {
 });
 ```
 
-원래 2 중 베열 객체였는데 간소화 한 거임
+원래 2 중 베열 객체였는데 간소화 한 거임  
 원래 아래 같은 느낌이였음
 
 ```json
@@ -84,10 +84,10 @@ setMaps((prevMaps) => {
 
 ## 에러
 
-![](file/vite-glob.png)
+![](file/vite-glob.png)  
 이런 에러가 발생해서 기존 코드를 App.tsx 에 컴포넌트 인라인으로 수정하려해봤다
 
-시도했을 때의 가장 큰 문제는
+시도했을 때의 가장 큰 문제는  
 해당 컴포넌트에서 vite 가 제대로 실행되지 않는다는 것
 
 ## 해결 완료
@@ -135,7 +135,7 @@ JSX 문법을 잘 지키자 라는 것을 알 수 있었다
 
 ## 리액트 컴포넌트 함수 사용하기
 
-{LearnRouter()} 이런식으로 사용함 그런데 굳이 이름 대문자일 필요 없다
+{LearnRouter()} 이런식으로 사용함 그런데 굳이 이름 대문자일 필요 없다  
 JSX 문법으로 쓰는게 아니여서 무방함
 
 ![](file/vite-glob-2.png)

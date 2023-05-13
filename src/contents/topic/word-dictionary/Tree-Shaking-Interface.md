@@ -1,13 +1,13 @@
 ---
 date: 2023-03-30
-modified: 2023-04-30
+modified: 2023-05-14
 ---
 
 Tree shaking 은 애플리케이션에서 사용하지 않는 코드를 제거하여 번들 크기를 최소화하는 프로세스입니다.
 
 ## echart 적용 예시
 
-echart 단일 사용 시 적용 방법 : [Migration from v4 to v5 - What's New - Basics - Handbook - Apache ECharts](https://echarts.apache.org/handbook/en/basics/release-note/v5-upgrade-guide/)
+echart 단일 사용 시 적용 방법 : [Migration from v4 to v5 - What's New - Basics - Handbook - Apache ECharts](https://echarts.apache.org/handbook/en/basics/release-note/v5-upgrade-guide/)  
 react for react 에서 적용 방법 : [GitHub - hustcc/echarts-for-react: ⛳️ Apache ECharts components for React wrapper. 一个简单的 Apache echarts 的 React 封装。](https://github.com/hustcc/echarts-for-react#usage)
 
 v5 에서 번들 축소를 위한 코드 작성법에 대한 설명이 나온다

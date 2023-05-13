@@ -1,15 +1,15 @@
 ---
 sidebar_position: 1
 date: 2023-03-14
-modified: 2023-05-01
+modified: 2023-05-14
 ---
 
-타입 추론 안되는 안티패턴 소개
+타입 추론 안되는 안티패턴 소개  
 TypeScript 4.9.5
 
 ## 소개
 
-음... 기능은 잘되는데 왜 안티패턴이냐...
+음... 기능은 잘되는데 왜 안티패턴이냐...  
 일단 Default 여서 참조형으로 변하면서 안되는 것 같음
 
 ```tsx
@@ -60,7 +60,7 @@ export const order = ['front', 'back', 'work', 'language', 'blog'];
 export default [markdownSlice.reducer, componentsSlice.reducer];
 ```
 
-이 방식으로 했을 때
+이 방식으로 했을 때  
 store.tsx 에서 이런식으로 받았다
 
 ```tsx
@@ -68,16 +68,16 @@ import Reducers from '@/features/postSlice';
 const [markdownReducer, componentsReducer] = Reducers;
 ```
 
-그랬더니 타입추론이 Never 로 되버림
+그랬더니 타입추론이 Never 로 되버림  
 그래서 원래 형태인
 
 ```tsx
 export default markdownSlice.reducer;
 ```
 
-로 바꿨더니 잘 됬다 여기서...
-이 `[object, object]` 형태가 문제를 일으킴을 알 수 있었다
-그래서
+로 바꿨더니 잘 됬다 여기서...  
+이 `[object, object]` 형태가 문제를 일으킴을 알 수 있었다  
+그래서  
 `export authSlice.reducer` 를 해야하는 상황이여서... 어떻게 하나 시도를 해봤다
 
 ```tsx slice.tsx
@@ -89,9 +89,9 @@ export const componentsReducer = componentsSlice.reducer;
 import { markdownReducer, componentsReducer } from '@/features/postSlice';
 ```
 
-이 작업을 하면서 export 시 감싸서 보내는 것이 문제를 발생시킬 수 있음을 알 수 있었다
-아마도 const 형태여서 그런걸까 라는 추론을 뒤늦게 해보았다 > let 으로 바꿔봄
-작동에 문제는 없었지만
+이 작업을 하면서 export 시 감싸서 보내는 것이 문제를 발생시킬 수 있음을 알 수 있었다  
+아마도 const 형태여서 그런걸까 라는 추론을 뒤늦게 해보았다 > let 으로 바꿔봄  
+작동에 문제는 없었지만  
 동일한 문제로 추론이 잘되지 않는 것을 알 수 있었다
 
 ![](file/01-array-export-anti-patten.png)

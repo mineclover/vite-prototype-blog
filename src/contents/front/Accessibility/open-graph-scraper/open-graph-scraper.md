@@ -1,13 +1,13 @@
 ---
 date: 2023-03-03
-modified: 2023-04-30
+modified: 2023-05-14
 ---
 
 ## 소개
 
 웹 사이트의 접근성을 올려주는 요즘 기술 중에 하나
 
-개발을 할 때 트위치, 페이스북, 인스타그램에 대해서 이 og 세팅을 신경쓰라는 말이 있다
+개발을 할 때 트위치, 페이스북, 인스타그램에 대해서 이 og 세팅을 신경쓰라는 말이 있다  
 링크를 복사할 때 배너 형식으로 나오는 미리보기 화면이 이 open-graph 에 영향을 받는 요소다
 
 ### 참고
@@ -31,14 +31,14 @@ modified: 2023-04-30
 
 흠
 
-없는 것 같다
-서버를 경유하는 게 기본 옵션이다
+없는 것 같다  
+서버를 경유하는 게 기본 옵션이다  
 만든다면 노드에 링크를 보내서 받아오게 하는 영역을 만들어야한다
 
 ### openGraphScraper
 
 [GitHub - jshemas/openGraphScraper: Node.js scraper service for Open Graph Info and More!](https://github.com/jshemas/openGraphScraper#readme)
 
-흠..
-생각보다 로컬 api 를 일찍..
+흠..  
+생각보다 로컬 api 를 일찍..  
 아니 근데 그냥 그 때 그 때 가져오지말고 매핑하면 되는 것 아닌가

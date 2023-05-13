@@ -1,13 +1,13 @@
 ---
 date: 2023-05-07
-modified: 2023-05-07
+modified: 2023-05-14
 ---
 
 서버 없이 파일을 저장해야한다
 
 파일을 저장해서 바로 접목할 수 있겟끔하는 목적
 
-이걸로 하고자 하는 것은 객체 값의 실시간 수정을 위한 전략이다
+이걸로 하고자 하는 것은 객체 값의 실시간 수정을 위한 전략이다  
 object 를 json.stringify 하면 json 파일이지 않는가
 
 이걸 다운로드해서 파일에 넣으면 그게 웹 사이트로 하는 오프라인 작업일 것이다
@@ -52,8 +52,8 @@ supabase Client 에서 limit 조절하는 방법
 const { data, error } = await supabase.from('users').select('*').limit(10);
 ```
 
-`LIMIT` 절은 `OFFSET` 절과 함께 사용하여 결과 집합의 일부를 반환할 수도 있습니다. 예를 들어, 다음 코드는 `users` 테이블에서 10 번째 행부터 5 개의 행을 반환합니다.
-[Supabase Javascript Client](https://supabase.com/docs/reference/javascript/limit)
+`LIMIT` 절은 `OFFSET` 절과 함께 사용하여 결과 집합의 일부를 반환할 수도 있습니다. 예를 들어, 다음 코드는 `users` 테이블에서 10 번째 행부터 5 개의 행을 반환합니다.  
+[Supabase Javascript Client](https://supabase.com/docs/reference/javascript/limit)  
 리미트는 있지만 offset 은 없다
 
 ```tsx

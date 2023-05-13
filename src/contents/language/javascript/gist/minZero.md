@@ -1,9 +1,9 @@
 ---
 date: 2023-04-03
-modified: 2023-04-30
+modified: 2023-05-14
 ---
 
-NaN 과 Infinity 에 대해 0 으로 처리하고자 하는 기능이였음
+NaN 과 Infinity 에 대해 0 으로 처리하고자 하는 기능이였음  
 프로그래시브 바에 value 로 a/b 를 넣어야하는데 a 와 b 가 0 이나 Infinity, undefined 일 때가 있었어서 해당 문제를 해결하기 위함
 
 ```js

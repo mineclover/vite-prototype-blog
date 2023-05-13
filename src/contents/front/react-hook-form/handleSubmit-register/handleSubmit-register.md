@@ -1,13 +1,13 @@
 ---
 sidebar_position: 1
 date: 2023-03-03
-modified: 2023-05-03
+modified: 2023-05-14
 ---
 
 ## handleSubmit, register 특징
 
-html 에 내장된 동작을 작동하지 않도록 하기 위한 [Event.preventDefault()](https://developer.mozilla.org/ko/docs/Web/API/Event/preventDefault) 를 내장하고 있다
-작업에 필요한 반복되는 로직은 숨겨뒀고
+html 에 내장된 동작을 작동하지 않도록 하기 위한 [Event.preventDefault()](https://developer.mozilla.org/ko/docs/Web/API/Event/preventDefault) 를 내장하고 있다  
+작업에 필요한 반복되는 로직은 숨겨뒀고  
 자주 수정하는 부분만 아규먼트로 입력하게 해서 사용하게 함
 
 ### register
@@ -16,7 +16,7 @@ register 의 경우 onChange, onBlur 등을 키 값으로 하고 콜백을 value
 
 기본적인 코드는 아래와 같다
 
-- 설명할 때에는 RHF(React-Hook-Form) 으로 축약해서 사용함
+- 설명할 때에는 RHF(React-Hook-Form) 으로 축약해서 사용함  
   [Get Started | React Hook Form - Simple React forms validation](https://react-hook-form.com/get-started/#Quickstart)
 
 ```jsx

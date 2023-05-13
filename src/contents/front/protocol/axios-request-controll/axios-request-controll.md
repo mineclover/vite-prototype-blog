@@ -1,23 +1,23 @@
 ---
 sidebar_position: 1
 date: 2023-03-18
-modified: 2023-04-30
+modified: 2023-05-14
 ---
 
 ## 소개
 
-작업 전에 interceptors 에 넣는 것과
+작업 전에 interceptors 에 넣는 것과  
 시그널 주입으로 열린 request 를 닫는 기능을 정리했다
 
 우선 이 작업은 팀프로젝트로 진행했던 홀리몰리 프론트 PDF 개발에 들어있다
 
-참고는 예전에 써둿던 걸 참고 했다
+참고는 예전에 써둿던 걸 참고 했다  
 [메모했던 axios 요청 취소](obsidian://open?vault=source&file=00-Project%2F03-R-%EB%B0%B1%EC%95%A4%EB%93%9C%20%ED%98%91%EC%97%85%2F02%20%ED%8C%A8%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%8D%BC%EC%8A%A4%20%EB%AF%B8%EB%8B%88%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%2F%EB%A1%9C%EA%B7%B8%EC%9D%B8%20%26%20%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85%2F%ED%8E%98%EC%9D%B4%EC%A7%80%20%EC%9D%B4%EB%8F%99%20%EB%A1%9C%EC%A7%81%2FQ-axios%20%EC%9A%94%EC%B2%AD%20%EC%B7%A8%EC%86%8C%EC%97%90%20%EB%8C%80%ED%95%B4)
 
-취소를 위한 로직에서 레거시 패턴은 cancelToken 이고
+취소를 위한 로직에서 레거시 패턴은 cancelToken 이고  
 최신 패턴은 AbortController 이다
 
-config 의 signal 에 값을 넣어서 사용한다
+config 의 signal 에 값을 넣어서 사용한다  
 한번 abort() 되면 계속 요청을 비활성화 시키기 때문에 새로운 컨트롤러를 전송 이벤트 발생 시 넣어줘야한다
 
 ```tsx
@@ -89,10 +89,10 @@ function throwIfSignalAborted(signal) {
 
 ## AbortController 구조
 
-정확히는 siganl 과 .abort() 가 있다
+정확히는 siganl 과 .abort() 가 있다  
 시그널에서 aborted 라는 속성을 통해 정지 실행여부를 확인 가능하다
 
 ### signal.aborted
 
-false 가 실행되지 않은 것이고 true 가 실행된 것...
+false 가 실행되지 않은 것이고 true 가 실행된 것...  
 ![](file/01-axios-request-controll.png)
