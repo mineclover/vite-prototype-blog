@@ -7,8 +7,10 @@ modified: 2023-05-14
 
 - [x] 필요 기능 전부 구현해보기 ✅ 2023-05-05
 - [x] 공백 있는 글의 링크 소실 문제 해결 > blog 폴더 복구 ✅ 2023-05-14
-- [ ] 도큐사우르스에서 마크다운 문법 규칙으로 줄바꿈을 하려면 두번 띄우거나 , 문장의 끝 자리에 공백을 두개 넣어야하는 문제 수정
+- [x] 도큐사우르스에서 마크다운 문법 규칙으로 줄바꿈을 하려면 두번 띄우거나 , 문장의 끝 자리에 공백을 두개 넣어야하는 문제 수정 ✅ 2023-05-14
   - [soft & hard line breaks · facebook/docusaurus · Discussion #6528 · GitHub](https://github.com/facebook/docusaurus/discussions/6528)
+  - 정규식 테스트 [test 코드](docusaurus/strict%20line/test%20코드)
+- [ ] 배포시 md 파일 자체의 종속성이 해제 됬으므로 제거
 - [ ] 노션에 있는 데이터 가져오기
 - [ ] 가져오는 것에 대한 자동화 시도
 - [ ] 내용 채우기
