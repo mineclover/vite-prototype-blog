@@ -2,6 +2,11 @@
 ./docusaurus
 ./macro
 src/contents/**/*.md
+src/contents/**/*.canvas
+src/contents/**/*.png
+src/contents/**/*.jpg
+# png jpg는 정적파일이라 public 에서 관리된다
+
 # Logs
 logs
 *.log
